@@ -6,6 +6,7 @@ tags = ["Desert"]
 +++
 
 ### Calories: 580
+### 1 Portion
 
 # Ingredients:
 - 40g oats

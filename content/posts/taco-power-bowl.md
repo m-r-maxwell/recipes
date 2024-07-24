@@ -6,6 +6,7 @@ tags = ["Mexican"]
 +++
 
 ### 522 Calories | 54g Protein | 42g Carbs | 14g Fat
+### 4 Portions
 
 # Ingredients (4 servings)
 ### Taco Seasoning Mix:

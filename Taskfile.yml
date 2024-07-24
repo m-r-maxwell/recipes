@@ -1,0 +1,23 @@
+version: '3'
+
+tasks:
+  serve:
+    desc: Serve the site
+    aliases:
+      - s
+    cmds:
+      - hugo server
+  draft:
+    desc: Serve the site with drafts
+    cmds:
+      - hugo server -D
+  publish:
+    desc: Publish the site to github with github pages
+    cmds:
+      - hugo
+      - git add .
+      - git commit -m "Publishing to gh-pages"
+      - git push origin
+
+# reminder
+# hugo new [name].md creates a new page.

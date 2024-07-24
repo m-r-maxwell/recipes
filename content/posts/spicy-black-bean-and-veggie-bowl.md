@@ -6,6 +6,7 @@ tags = ["Mexican"]
 +++
 
 ### 480 Cals, 20g Protein, 18g Fat, 50g Carbs
+### 4 Portions
 
 # Ingredients:
 - 1 cup brown rice, rinsed

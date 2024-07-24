@@ -39,8 +39,8 @@ languages:
         - name: Tags
           url: tags/
           weight: 10
-        - name: Posts
-          url: posts/
+        - name: About
+          url: about/
           weight: 10
         # - name: WiKi
         #   url: https://github.com/adityatelange/hugo-PaperMod/wiki/
@@ -63,7 +63,7 @@ params:
   # disableSpecial1stPost: true
   displayFullLangName: true
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
   ShowAllPagesInArchive: true
@@ -90,9 +90,10 @@ params:
   homeInfoParams:
     Title: "Recipes"
     Content: >
-      👋 Welcome to the hosting page for my recipes.
+      👋 Welcome to the hosting page for recipes.
       <br>
-      Take a look at posts to see what I've been cooking up lately by checking out the posts or tags.
+      These are recipes I have found online, made myself, or found through friends.
+      I hope you enjoy them as much as I do!
 
   # socialIcons:
   #   - name: github
