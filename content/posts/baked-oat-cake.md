@@ -2,7 +2,7 @@
 title = 'Baked Oat Cake'
 date = 2024-07-21T15:12:12-04:00
 draft = false
-tags = ["Desert"]
+tags = ["Dessert"]
 +++
 
 ### Calories: 580
