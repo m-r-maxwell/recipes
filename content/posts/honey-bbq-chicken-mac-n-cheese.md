@@ -5,8 +5,8 @@ draft = false
 tags = ["BBQ", "Chicken"]
 +++
 
-511 Calories | 50g Protein | 55g Carbs | 10g Fat
-
+### 511 Calories | 50g Protein | 55g Carbs | 10g Fat
+### 4 Portions
 
 # Mac N Cheese Ingredients:
 - 250ml Skimmed Milk
