@@ -19,10 +19,10 @@ tags = ["Salmon", "Japanese"]
 - 1 tsp sesame seeds
 
 ## Instructions:
-Whisk soy sauce, mirin, honey, garlic, and ginger into a marinade.
-Marinate salmon 20 minutes.
-Bake or air fry at 200°C for 10–12 minutes.
-Stir edamame and sesame seeds into warm rice.
+1. Whisk soy sauce, mirin, honey, garlic, and ginger into a marinade.
+2. Marinate salmon 20 minutes.
+3. Bake or air fry at 200°C for 10–12 minutes.
+4. Stir edamame and sesame seeds into warm rice.
 
 ## Serve:
 1 salmon fillet per bowl200g edamame rice

@@ -23,11 +23,11 @@ tags = ["Chicken", "Thai"]
 - Rice 800g cooked jasmine rice
 
 ## Instructions:
-Sauté garlic and chili in sesame oil.
-Add chicken and cook until browned.
-Add sauces, sugar, and basil. 
-Stir until wilted and fragrant.
-Simmer 2–3 minutes.
+1. Sauté garlic and chili in sesame oil.
+2. Add chicken and cook until browned.
+3. Add sauces, sugar, and basil. 
+4. Stir until wilted and fragrant.
+5. Simmer 2–3 minutes.
 
 ## Serve:
 200g Thai basil chicken
