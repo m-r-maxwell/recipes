@@ -1,0 +1,36 @@
+{{- /*
+For a given taxonomy, renders a list of terms assigned to the page.
+
+@context {page} page The current page.
+@context {string} taxonomy The taxonomy.
+
+@example: {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+*/}}
+
+{{- $page := .page }}
+{{- $taxonomy := .taxonomy }}
+
+{{- /*
+  Render the terms for a page using the theme's horizontal `.terms-list` markup.
+  Be defensive: only render entries that have a `.Page` (some entries may be leaves).
+*/ -}}
+{{- with $page.GetTerms $taxonomy }}
+  {{- $first := index . 0 }}
+  {{- $label := "" }}
+  {{- if $first }}
+    {{- with $first.Parent }}
+      {{- $label = .LinkTitle }}
+    {{- end }}
+  {{- end }}
+
+  <div class="terms" role="group" {{ if $label }}aria-labelledby="terms-label-{{ $taxonomy }}"{{ end }}>
+    {{- if $label }}<div id="terms-label-{{ $taxonomy }}" class="terms-label">{{ $label }}:</div>{{- end }}
+    <ul class="terms-list" role="list" aria-label="{{ $label }}">
+      {{- range . }}
+        {{- with .Page }}
+          <li class="term" role="listitem"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+        {{- end }}
+      {{- end }}
+    </ul>
+  </div>
+{{- end }}

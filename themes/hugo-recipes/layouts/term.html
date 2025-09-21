@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <main role="main" aria-labelledby="term-title">
+    <h1 id="term-title">{{ .Title }}</h1>
+    {{ .Content }}
+
+    {{ if .Pages }}
+      <div class="terms" role="group" aria-labelledby="term-items-label">
+        <div id="term-items-label" class="terms-label">Items:</div>
+        <ul class="terms-list" role="list" aria-label="Term items">
+          {{- range .Pages }}
+            <li class="term" role="listitem"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+          {{- end }}
+        </ul>
+      </div>
+    {{ end }}
+  </main>
+{{ end }}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+</body>
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#content" aria-label="Skip to content">Skip to content</a>
+
+  <header>
+    {{ partial "header.html" . }}
+  </header>
+  <main id="content">
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    {{ partial "footer.html" }}
+  </footer>
+</body>
+</html>

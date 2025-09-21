@@ -1,0 +1,9 @@
+<div class="site-header" role="banner" aria-label="Site header">
+	<h1 class="site-title">{{ site.Title }}</h1>
+	<button id="menu-toggle" class="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle menu">
+		<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+	</button>
+	<div class="site-nav">
+		{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+	</div>
+</div>

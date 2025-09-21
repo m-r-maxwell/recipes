@@ -4,7 +4,7 @@ baseURL: "https://m-r-maxwell.github.io/recipes/"
 title: Meal Prep Recipes
 #copyright: "© [PaperMod Contributors](https://github.com/adityatelange/hugo-PaperMod/graphs/contributors)"
 paginate: 5
-theme: hugo-PaperMod
+theme: "hugo-recipes"
 
 enableInlineShortcodes: true
 enableRobotsTXT: true

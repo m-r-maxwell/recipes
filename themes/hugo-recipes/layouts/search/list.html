@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <!-- <h1>{{ .Title }}</h1>
+  <p>{{ .Content }}</p> -->
+  <div role="search" aria-label="Site search">
+    <label>
+      <input data-theme-search id="theme-search-input" type="search" placeholder="Search the site..." aria-label="Search" aria-controls="theme-search-results">
+    </label>
+    <ul id="theme-search-results" data-theme-search-results role="list" aria-live="polite">
+      <!-- <li>Type to search</li> -->
+    </ul>
+  </div>
+{{ end }}

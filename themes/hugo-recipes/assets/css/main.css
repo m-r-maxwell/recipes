@@ -1,0 +1,329 @@
+:root {
+  --bg: #ffffff;
+  --text: #222222;
+  --link: #0066ee;
+  --border: #222222;
+  --muted: #6b6b6b;
+  /* input colors tuned for contrast with the background */
+  --input-bg: #fafbfd; /* subtle off-white */
+  --input-border: #dcdfe6;
+  --input-text: var(--text);
+  --input-placeholder: #7a7a7a;
+  /* RGB for focus shadow (link) */
+  --link-rgb: 0,102,238;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #272932;
+    --text: #F5F3F5;
+    /* softer blue for dark mode that's still high contrast */
+    --link: #66aaff;
+    --border: #a18276;
+    --muted: #cfc7c3;
+    /* inputs tuned for darker backgrounds */
+    --input-bg: #32343a;
+    --input-border: #4a4d53;
+    --input-text: var(--text);
+    --input-placeholder: #b9a9a3;
+    /* RGB for focus shadow (link) */
+    --link-rgb: 102,170,255;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 1rem;
+  max-width: 768px;
+}
+
+/* Skip link: visually hidden but visible on focus */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 0.75rem;
+  background: var(--link);
+  color: white;
+  border-radius: 4px;
+  z-index: 9999;
+}
+
+header {
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1rem;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+/* Anchor for absolute-positioned mobile menu */
+.site-header { position: relative; }
+
+.site-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.75rem;
+}
+
+nav a {
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  padding: 0.25rem;
+  margin-left: 0.5rem;
+}
+.menu-toggle svg { display: block; }
+/* Use the border color for the hamburger (will be #a18276 in dark mode as defined by :root in dark media) */
+.menu-toggle { color: var(--border); }
+.menu-toggle:focus,
+.menu-toggle:focus-visible {
+  outline: 3px solid rgba(var(--link-rgb), 0.18);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* By default the nav is visible on larger screens; hide it only under the mobile breakpoint. */
+.main-nav { display: block; }
+
+/* Responsive breakpoints */
+@media (max-width: 640px) {
+  /* hide nav behind toggle by default on mobile */
+  .main-nav.mobile-hidden { display: none; }
+  .menu-toggle { display: inline-flex; order: 2; margin-left: auto; }
+  .site-header { align-items: center; }
+  .site-nav { width: 100%; }
+  .site-title { font-size: 1rem; }
+
+  /* Make menu an overlay dropdown so it doesn't push page content */
+  .main-nav.open {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% + 0.0rem); /* directly under the header */
+    width: 95%;
+    background: var(--bg); /* match page background */
+    color: var(--text);
+    padding: 0.5rem 1rem;
+    box-shadow: none;
+    border-radius: 0;
+    z-index: 9999;
+  }
+
+  /* Vertical menu layout but do not stretch links full width */
+  nav ul { flex-direction: column; gap: 0.25rem; align-items: flex-start; }
+  nav ul li { align-self: flex-start; }
+  nav a { display: inline-block; }
+
+  /* Links should use the regular theme link color on the background */
+  .main-nav.open a,
+  .main-nav.open a:link,
+  .main-nav.open a:visited {
+    color: var(--link) !important;
+  }
+  .main-nav.open a:focus,
+  .main-nav.open a:focus-visible {
+    outline: 3px solid rgba(var(--link-rgb), 0.18);
+    outline-offset: 3px;
+  }
+}
+
+/* Search input and results */
+input[data-theme-search] {
+  background: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--input-border);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  width: min(540px, 100%);
+  box-sizing: border-box;
+  transition: box-shadow 180ms ease, border-color 180ms ease, background-color 180ms ease;
+}
+
+input[data-theme-search]::placeholder {
+  color: var(--input-placeholder);
+  opacity: 1;
+}
+
+input[data-theme-search]:focus {
+  outline: none;
+  border-color: var(--link);
+  box-shadow: 0 0 0 6px rgba(var(--link-rgb), 0.12);
+}
+
+[data-theme-search-results] {
+  margin-top: 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+[data-theme-search-results] li {
+  padding: 0.5rem 0.25rem;
+  border-bottom: 1px solid var(--input-border);
+}
+
+[data-theme-search-results] li a {
+  color: var(--link);
+  font-weight: 600;
+}
+
+[data-theme-search-results] li p {
+  margin: 0.25rem 0 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+[data-theme-search-results] li:hover {
+  background: rgba(var(--link-rgb), 0.02);
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  margin-top: 1rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+/* Link highlight / hover box */
+a,
+nav a,
+.terms-list .term a {
+  transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+  border-radius: 6px;
+}
+
+a:hover,
+a:focus,
+nav a:hover,
+nav a:focus,
+.terms-list .term a:hover,
+.terms-list .term a:focus {
+  background: rgba(var(--link-rgb), 0.08);
+  color: var(--link);
+  transform: translateY(-1px);
+}
+
+/* Mobile touch/press feedback
+   - Provide immediate tactile feedback on touch devices using :active where possible
+   - Add a `.pressed` class for JS-driven presses to cover cases where :active is unreliable
+   - Keep motion short and respect reduced-motion preference
+*/
+@media (pointer: coarse) {
+  a, button, .main-nav a, .terms-list .term a {
+    will-change: transform, box-shadow;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  a:active, button:active, .main-nav a:active, .terms-list .term a:active,
+  a.pressed, button.pressed, .main-nav a.pressed, .terms-list .term a.pressed {
+    transform: translateY(1px) scale(0.998);
+    box-shadow: inset 0 1px 0 rgba(var(--link-rgb), 0.08);
+    filter: brightness(0.98);
+  }
+
+  /* Slightly stronger press for .btn utility class */
+  .btn:active, .btn.pressed {
+    transform: translateY(1px) scale(0.996);
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.06);
+  }
+
+  /* Prefer reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    a, button, .main-nav a, .terms-list .term a { transition: none; transform: none; box-shadow: none; }
+    a:active, button:active, .pressed { transform: none; box-shadow: none; }
+  }
+}
+
+/* Tags / terms styling */
+.terms {
+  margin-top: 0.5rem;
+}
+
+.terms-label {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.terms-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* limit width to the content container (95% of the content block) to keep tags aligned with content */
+  max-width: 95%;
+}
+
+.terms-list .term {
+  background: rgba(0,0,0,0.04);
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+}
+
+.terms-list .term a {
+  color: var(--link);
+  font-size: 0.92rem;
+}
+
+/* Keyboard focus styles for accessibility */
+.terms-list .term a:focus,
+.terms-list .term a:focus-visible {
+  outline: 3px solid rgba(var(--link-rgb), 0.18);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Menu link focus styles */
+nav a:focus,
+nav a:focus-visible {
+  outline: 3px solid rgba(var(--link-rgb), 0.18);
+  outline-offset: 3px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .terms-list .term {
+    background: rgba(255,255,255,0.04);
+  }
+
+  /* Ensure focus outline is visible in dark mode */
+  .terms-list .term a:focus,
+  .terms-list .term a:focus-visible,
+  nav a:focus,
+  nav a:focus-visible {
+    outline-color: rgba(var(--link-rgb), 0.28);
+  }
+}

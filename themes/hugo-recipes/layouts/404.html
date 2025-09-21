@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <section>
+    <h1>Page not found (404)</h1>
+    <p>Sorry — we couldn't find the page you were looking for. Try searching the site or check one of the recent recipes or snacks below.</p>
+
+    <label>
+      <input data-theme-search type="search" placeholder="Search the site..." aria-label="Search">
+    </label>
+
+    <h2>Recent Recipes & Snacks</h2>
+    <ul>
+      {{- $recipes := where site.RegularPages "Section" "recipes" -}}
+      {{- $snacks := where site.RegularPages "Section" "snacks" -}}
+      {{- $combined := first 6 (sort (union $recipes $snacks) "Date" "desc") -}}
+      {{- range $combined }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> — <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></li>
+      {{- end }}
+    </ul>
+
+    <p><a href="/">Return to home</a></p>
+  </section>
+{{ end }}

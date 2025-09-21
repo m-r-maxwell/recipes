@@ -1,0 +1,35 @@
+{{ define "main" }}
+  {{ with .Params.home_intro }}
+    <p class="home-intro">{{ . }}</p>
+  {{ else }}
+    {{ .Content }}
+  {{ end }}
+
+  <section>
+    <h2>Recent Recipes</h2>
+    <ul>
+      {{- $recipes := first 10 (sort (where site.RegularPages "Section" "recipes") "Date" "desc") -}}
+      {{- range $recipes }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+        </li>
+      {{- end }}
+    </ul>
+    <p><a href="{{ "/recipes/" | relLangURL }}">View all recipes</a></p>
+  </section>
+
+  <section>
+    <h2>Recent Snacks</h2>
+    <ul>
+      {{- $snacks := first 10 (sort (where site.RegularPages "Section" "snacks") "Date" "desc") -}}
+      {{- range $snacks }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+        </li>
+      {{- end }}
+    </ul>
+    <p><a href="{{ "/snacks/" | relLangURL }}">View all snacks</a></p>
+  </section>
+{{ end }}
