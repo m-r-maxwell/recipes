@@ -3,7 +3,8 @@
 baseURL: "https://m-r-maxwell.github.io/recipes/"
 title: Meal Prep Recipes
 #copyright: "© [PaperMod Contributors](https://github.com/adityatelange/hugo-PaperMod/graphs/contributors)"
-paginate: 5
+pagination:
+  pagerSize: 10
 theme: "hugo-recipes"
 
 enableInlineShortcodes: true
@@ -13,7 +14,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["posts"]
+mainsections: ["recipes"]
 
 minify:
   disableXML: true
@@ -30,17 +31,20 @@ languages:
       posts: posts
     menu:
       main:
+        - name: Home
+          url: /
+          weight: 1
         - name: Archive
-          url: archives
+          url: /archives/
           weight: 5
         - name: Search
-          url: search/
+          url: /search/
           weight: 10
         - name: Tags
-          url: tags/
+          url: /tags/
           weight: 10
         - name: About
-          url: about/
+          url: /about/
           weight: 10
         # - name: WiKi
         #   url: https://github.com/adityatelange/hugo-PaperMod/wiki/
@@ -81,11 +85,11 @@ params:
     # imageHeight: 120
     buttons:
       - name: Archives
-        url: archives
+        url: /archives/
       - name: Tags
-        url: tags
+        url: /tags/
       - name: Posts
-        url: posts
+        url: /archives/
 
   homeInfoParams:
     Title: "Recipes"

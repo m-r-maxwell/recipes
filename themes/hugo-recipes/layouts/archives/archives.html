@@ -1,0 +1,72 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{- $pages := where site.RegularPages "Section" "recipes" -}}
+  {{- $pages := $pages.ByDate.Reverse -}}
+
+  {{/* Build an ordered list of unique month strings from the pages for the TOC */}}
+  {{- $months := slice -}}
+  {{- range $pages -}}
+    {{- $m := .Date.Format "January 2006" -}}
+    {{- if not (in $months $m) -}}
+      {{- $months = $months | append $m -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if gt (len $months) 0 -}}
+    <nav class="archives-toc" aria-label="Archive months">
+      <h2>Jump to month</h2>
+      <ul>
+        {{- range $i, $m := $months -}}
+          {{- $id := printf "month-%d-%s" $i (urlize $m) -}}
+          <li><a href="#{{ $id }}">{{ $m }}</a></li>
+        {{- end -}}
+      </ul>
+    </nav>
+
+    {{/* Mobile-friendly native select: visible only on small screens via CSS */}}
+    <label class="archives-toc-select-label" for="archives-toc-select">
+      <span class="sr-only">Jump to month</span>
+      <select id="archives-toc-select" class="archives-toc-select" onchange="(function(sel){var v=sel.value; if(!v) return; if(v.charAt(0)==='#'){var id=v.slice(1); var el=document.getElementById(id); if(el){el.scrollIntoView({behavior:'smooth', block:'start'});} if(history.replaceState){history.replaceState(null,'',v);} else {location.hash=v;}}})(this)">
+        <option value="" disabled selected>Jump to month…</option>
+        {{- range $i, $m := $months -}}
+          {{- $id := printf "month-%d-%s" $i (urlize $m) -}}
+          <option value="#{{ $id }}">{{ $m }}</option>
+        {{- end -}}
+      </select>
+    </label>
+  {{- end -}}
+
+  {{/* Use Scratch to track current month while iterating sorted pages and add IDs to headings */}}
+  {{- $.Scratch.Set "currentMonth" "" -}}
+
+  {{- range $pages }}
+    {{- $month := .Date.Format "January 2006" -}}
+    {{- $cur := $.Scratch.Get "currentMonth" -}}
+    {{- if ne $cur $month }}
+      {{- if ne $cur "" }}
+        </ul>
+      {{- end }}
+      {{- /* Find index of this month in the $months slice for a stable id */ -}}
+      {{- $idx := -1 -}}
+      {{- range $j, $mm := $months -}}
+        {{- if eq $mm $month -}}
+          {{- $idx = $j -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $id := printf "month-%d-%s" $idx (urlize $month) -}}
+      <h2 id="{{ $id }}">{{ $month }}</h2>
+      <ul>
+      {{- $.Scratch.Set "currentMonth" $month -}}
+    {{- end }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <small>{{ .Date.Format "Jan 2" }}</small>
+    </li>
+  {{- end }}
+
+  {{- if ne ($.Scratch.Get "currentMonth") "" }}
+    </ul>
+  {{- end }}
+
+{{ end }}

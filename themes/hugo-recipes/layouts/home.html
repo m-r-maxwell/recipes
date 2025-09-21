@@ -7,22 +7,47 @@
 
   <section>
     <h2>Recent Recipes</h2>
+  {{- $perPage := cond (isset .Site.Params "homePagerSize") (.Site.Params.homePagerSize) 10 -}}
+  {{- $recipesColl := where site.RegularPages "Section" "recipes" -}}
+  {{- $recipesSorted := $recipesColl.ByDate.Reverse -}}
+  {{- $paginator := .Paginate $recipesSorted $perPage -}}
     <ul>
-      {{- $recipes := first 10 (sort (where site.RegularPages "Section" "recipes") "Date" "desc") -}}
-      {{- range $recipes }}
+      {{- range $paginator.Pages }}
         <li>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
           <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
         </li>
       {{- end }}
     </ul>
-    <p><a href="{{ "/recipes/" | relLangURL }}">View all recipes</a></p>
+
+  {{- if gt $paginator.TotalPages 1 }}
+      <nav class="pagination" aria-label="Home pagination">
+        {{- if $paginator.HasPrev }}
+          <a class="prev" href="{{ $paginator.Prev.URL }}">&larr; Newer</a>
+        {{- end }}
+        {{- range $paginator.Pagers }}
+          {{- if eq . $paginator }}
+            <span class="page current">{{ .PageNumber }}</span>
+          {{- else }}
+            <a class="page" href="{{ .URL }}">{{ .PageNumber }}</a>
+          {{- end }}
+        {{- end }}
+        {{- if $paginator.HasNext }}
+          <a class="next" href="{{ $paginator.Next.URL }}">Older &rarr;</a>
+        {{- end }}
+      </nav>
+    {{- end }}
+    {{- with site.GetPage "page" "recipes/all" }}
+      <p><a href="{{ .RelPermalink }}">View all recipes</a></p>
+    {{ end }}
   </section>
 
   <section>
     <h2>Recent Snacks</h2>
+  {{- $snacksCount := cond (isset .Site.Params "homeSnacksCount") (.Site.Params.homeSnacksCount) 5 -}}
+  {{- $snacksColl := where site.RegularPages "Section" "snacks" -}}
+  {{- $snacks := first $snacksCount ($snacksColl.ByDate.Reverse) -}}
     <ul>
-      {{- $snacks := first 10 (sort (where site.RegularPages "Section" "snacks") "Date" "desc") -}}
       {{- range $snacks }}
         <li>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
@@ -30,6 +55,8 @@
         </li>
       {{- end }}
     </ul>
-    <p><a href="{{ "/snacks/" | relLangURL }}">View all snacks</a></p>
+    {{ with site.GetPage "section" "snacks" }}
+      <p><a href="{{ .RelPermalink }}">View all snacks</a></p>
+    {{ end }}
   </section>
 {{ end }}

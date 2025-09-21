@@ -5,12 +5,13 @@
   --border: #222222;
   --muted: #6b6b6b;
   /* input colors tuned for contrast with the background */
-  --input-bg: #fafbfd; /* subtle off-white */
+  --input-bg: #fafbfd;
+  /* subtle off-white */
   --input-border: #dcdfe6;
   --input-text: var(--text);
   --input-placeholder: #7a7a7a;
   /* RGB for focus shadow (link) */
-  --link-rgb: 0,102,238;
+  --link-rgb: 0, 102, 238;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,7 +28,7 @@
     --input-text: var(--text);
     --input-placeholder: #b9a9a3;
     /* RGB for focus shadow (link) */
-    --link-rgb: 102,170,255;
+    --link-rgb: 102, 170, 255;
   }
 }
 
@@ -49,6 +50,7 @@ body {
   height: 1px;
   overflow: hidden;
 }
+
 .skip-link:focus,
 .skip-link:focus-visible {
   left: 1rem;
@@ -75,7 +77,9 @@ header {
 }
 
 /* Anchor for absolute-positioned mobile menu */
-.site-header { position: relative; }
+.site-header {
+  position: relative;
+}
 
 .site-title {
   margin: 0;
@@ -102,9 +106,16 @@ nav a {
   padding: 0.25rem;
   margin-left: 0.5rem;
 }
-.menu-toggle svg { display: block; }
+
+.menu-toggle svg {
+  display: block;
+}
+
 /* Use the border color for the hamburger (will be #a18276 in dark mode as defined by :root in dark media) */
-.menu-toggle { color: var(--border); }
+.menu-toggle {
+  color: var(--border);
+}
+
 .menu-toggle:focus,
 .menu-toggle:focus-visible {
   outline: 3px solid rgba(var(--link-rgb), 0.18);
@@ -113,16 +124,35 @@ nav a {
 }
 
 /* By default the nav is visible on larger screens; hide it only under the mobile breakpoint. */
-.main-nav { display: block; }
+.main-nav {
+  display: block;
+}
 
 /* Responsive breakpoints */
 @media (max-width: 640px) {
+
   /* hide nav behind toggle by default on mobile */
-  .main-nav.mobile-hidden { display: none; }
-  .menu-toggle { display: inline-flex; order: 2; margin-left: auto; }
-  .site-header { align-items: center; }
-  .site-nav { width: 100%; }
-  .site-title { font-size: 1rem; }
+  .main-nav.mobile-hidden {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    order: 2;
+    margin-left: auto;
+  }
+
+  .site-header {
+    align-items: center;
+  }
+
+  .site-nav {
+    width: 100%;
+  }
+
+  .site-title {
+    font-size: 1rem;
+  }
 
   /* Make menu an overlay dropdown so it doesn't push page content */
   .main-nav.open {
@@ -130,20 +160,34 @@ nav a {
     position: absolute;
     left: 0;
     right: 0;
-    top: calc(100% + 0.0rem); /* directly under the header */
+    top: calc(100% + 0.0rem);
+    /* directly under the header */
     width: 95%;
-    background: var(--bg); /* match page background */
+    background: var(--bg);
+    /* match page background */
     color: var(--text);
     padding: 0.5rem 1rem;
-    box-shadow: none;
-    border-radius: 0;
-    z-index: 9999;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    /* subtle border using chosen color for distinction */
+    border: 1px solid #a18276;
+    z-index: 99999;
   }
 
   /* Vertical menu layout but do not stretch links full width */
-  nav ul { flex-direction: column; gap: 0.25rem; align-items: flex-start; }
-  nav ul li { align-self: flex-start; }
-  nav a { display: inline-block; }
+  nav ul {
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    align-self: flex-start;
+  }
+
+  nav a {
+    display: inline-block;
+  }
 
   /* Links should use the regular theme link color on the background */
   .main-nav.open a,
@@ -151,6 +195,7 @@ nav a {
   .main-nav.open a:visited {
     color: var(--link) !important;
   }
+
   .main-nav.open a:focus,
   .main-nav.open a:focus-visible {
     outline: 3px solid rgba(var(--link-rgb), 0.18);
@@ -242,28 +287,53 @@ nav a:focus,
    - Keep motion short and respect reduced-motion preference
 */
 @media (pointer: coarse) {
-  a, button, .main-nav a, .terms-list .term a {
+
+  a,
+  button,
+  .main-nav a,
+  .terms-list .term a {
     will-change: transform, box-shadow;
     -webkit-tap-highlight-color: transparent;
   }
 
-  a:active, button:active, .main-nav a:active, .terms-list .term a:active,
-  a.pressed, button.pressed, .main-nav a.pressed, .terms-list .term a.pressed {
+  a:active,
+  button:active,
+  .main-nav a:active,
+  .terms-list .term a:active,
+  a.pressed,
+  button.pressed,
+  .main-nav a.pressed,
+  .terms-list .term a.pressed {
     transform: translateY(1px) scale(0.998);
     box-shadow: inset 0 1px 0 rgba(var(--link-rgb), 0.08);
     filter: brightness(0.98);
   }
 
   /* Slightly stronger press for .btn utility class */
-  .btn:active, .btn.pressed {
+  .btn:active,
+  .btn.pressed {
     transform: translateY(1px) scale(0.996);
-    box-shadow: inset 0 2px 6px rgba(0,0,0,0.06);
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.06);
   }
 
   /* Prefer reduced motion */
   @media (prefers-reduced-motion: reduce) {
-    a, button, .main-nav a, .terms-list .term a { transition: none; transform: none; box-shadow: none; }
-    a:active, button:active, .pressed { transform: none; box-shadow: none; }
+
+    a,
+    button,
+    .main-nav a,
+    .terms-list .term a {
+      transition: none;
+      transform: none;
+      box-shadow: none;
+    }
+
+    a:active,
+    button:active,
+    .pressed {
+      transform: none;
+      box-shadow: none;
+    }
   }
 }
 
@@ -289,7 +359,7 @@ nav a:focus,
 }
 
 .terms-list .term {
-  background: rgba(0,0,0,0.04);
+  background: rgba(0, 0, 0, 0.04);
   padding: 0.2rem 0.5rem;
   border-radius: 999px;
 }
@@ -316,7 +386,7 @@ nav a:focus-visible {
 
 @media (prefers-color-scheme: dark) {
   .terms-list .term {
-    background: rgba(255,255,255,0.04);
+    background: rgba(255, 255, 255, 0.04);
   }
 
   /* Ensure focus outline is visible in dark mode */
@@ -326,4 +396,167 @@ nav a:focus-visible {
   nav a:focus-visible {
     outline-color: rgba(var(--link-rgb), 0.28);
   }
+}
+
+/* Archives TOC layout: prevent horizontal scrolling by wrapping items.
+   - Uses flex-wrap so month links flow to new lines when space is limited.
+   - Ensures the container doesn't exceed the content width and keeps padding/spacing consistent. */
+.archives-toc {
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  /* keep the container neutral; individual chips use input-bg so they match the search input */
+}
+
+.archives-toc h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.archives-toc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  /* vertical and horizontal gaps */
+  align-items: center;
+}
+
+.archives-toc li {
+  margin: 0;
+}
+
+.archives-toc a {
+  display: inline-block;
+  /* Match the search input spacing and feel */
+  padding: 0.5rem 0.75rem;
+  background: var(--input-bg);
+  color: var(--link);
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: box-shadow 180ms ease, border-color 180ms ease, background-color 180ms ease;
+  white-space: normal;
+  /* allow wrapping within link text if needed */
+  font: inherit;
+  font-size: 1rem;
+}
+
+@media (max-width: 420px) {
+
+  /* On very small screens, make TOC items use full width for easier tapping */
+  .archives-toc ul {
+    gap: 0.4rem;
+  }
+
+  .archives-toc a {
+    width: 100%;
+  }
+}
+
+/* Accessibility: screen-reader-only helper */
+.sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Responsive: use native select for mobile and desktop so appearance is consistent */
+@media (max-width: 640px) {
+  /* keep the mobile behavior (select visible) */
+  .archives-toc {
+    display: none;
+  }
+
+  .archives-toc-select-label {
+    display: block !important;
+  }
+
+  .archives-toc-select {
+    display: block;
+    max-width: 540px;
+    width: min(540px, calc(100% - 1rem));
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--input-placeholder);
+    font: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+    box-sizing: border-box;
+    transition: box-shadow 180ms ease, border-color 180ms ease, background-color 180ms ease;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+}
+
+/* DESKTOP: hide the chips and show the select so desktop matches mobile look */
+@media (min-width: 641px) {
+  .archives-toc { display: none; }
+  .archives-toc-select-label { display: block !important; }
+  .archives-toc-select { display: block; }
+}
+
+/* Focus styling for archives TOC elements to match search input */
+.archives-toc a:focus,
+.archives-toc a:focus-visible,
+.archives-toc-select:focus,
+.archives-toc-select:focus-visible {
+  outline: none;
+  border-color: var(--link);
+  box-shadow: 0 0 0 6px rgba(var(--link-rgb), 0.12);
+}
+
+/* Ensure the select's placeholder option reads like a muted placeholder */
+.archives-toc-select option[disabled] {
+  color: var(--input-placeholder);
+}
+
+/* Provide a subtle chevron for the select on supporting browsers without changing layout */
+.archives-toc-select {
+  background: var(--input-bg);
+  color: var(--border);
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  /* leave space for the custom chevron */
+  padding-right: 2.25rem;
+  border-radius: 8px;
+  width: min(540px, 100%);
+  max-width: 540px;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: box-shadow 180ms ease, border-color 180ms ease, background-color 180ms ease;
+  -webkit-appearance: none;
+  appearance: none;
+  /* draw a small chevron so appearance looks the same across browsers */
+  background-image: linear-gradient(45deg, transparent 50%, var(--input-text) 50%), linear-gradient(135deg, var(--input-text) 50%, transparent 50%);
+  background-position: calc(100% - 1rem) calc(50% - 0.1rem), calc(100% - 0.75rem) calc(50% - 0.1rem);
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+}
+
+/* Desktop chip hover should match subtle hover used elsewhere (very light tint) */
+.archives-toc a:hover,
+.archives-toc a:active {
+  background: rgba(var(--link-rgb), 0.02);
+}
+
+/* Make link chips use the placeholder color for inner text when appropriate (e.g., disabled states)
+   and ensure focus behavior matches the search input */
+.archives-toc a:focus,
+.archives-toc a:focus-visible {
+  outline: none;
+  border-color: var(--link);
+  box-shadow: 0 0 0 6px rgba(var(--link-rgb), 0.12);
 }

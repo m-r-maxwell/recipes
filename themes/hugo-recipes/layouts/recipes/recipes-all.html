@@ -1,0 +1,39 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  {{- $perPage := cond (isset .Site.Params "homePagerSize") (.Site.Params.homePagerSize) 10 -}}
+  {{- $coll := where site.RegularPages "Section" "recipes" -}}
+  {{- $sorted := $coll.ByDate.Reverse -}}
+  {{- $paginator := .Paginate $sorted $perPage -}}
+
+  <ul>
+    {{- range $paginator.Pages }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      </li>
+    {{- end }}
+  </ul>
+
+  {{- if gt $paginator.TotalPages 1 }}
+    <nav class="pagination" aria-label="All recipes pagination">
+      {{- if $paginator.HasPrev }}
+        <a class="prev" href="{{ $paginator.Prev.URL }}">&larr; Newer</a>
+      {{- end }}
+
+      {{- range $paginator.Pagers }}
+        {{- if eq . $paginator }}
+          <span class="page current">{{ .PageNumber }}</span>
+        {{- else }}
+          <a class="page" href="{{ .URL }}">{{ .PageNumber }}</a>
+        {{- end }}
+      {{- end }}
+
+      {{- if $paginator.HasNext }}
+        <a class="next" href="{{ $paginator.Next.URL }}">Older &rarr;</a>
+      {{- end }}
+    </nav>
+  {{- end }}
+
+{{ end }}
