@@ -7,7 +7,26 @@
     async load() {
       if (this.index) return this.index;
       try {
-        const res = await fetch('/index.json');
+        // Determine the base path for the site dynamically. When the theme is
+        // served from a subpath (for example `/recipes/`) a hardcoded
+        // `/index.json` will point to the domain root and fail. Derive the
+        // base from the script URL that loaded this file (works with Hugo's
+        // resource pipeline and fingerprinting).
+        let base = '/';
+        try {
+          const scripts = Array.from(document.getElementsByTagName('script'));
+          // Find the script that contains "js/search" in its src
+          const s = scripts.find(el => el.src && /\/js\/search(\.|$)/.test(el.src));
+          if (s && s.src) {
+            const u = new URL(s.src, window.location.origin);
+            base = u.pathname.replace(/\/js\/search.*$/, '/');
+          }
+        } catch (e) {
+          // fall back to root-relative
+          base = '/';
+        }
+
+        const res = await fetch(base + 'index.json');
         this.index = await res.json();
         return this.index;
       } catch (e) {
@@ -56,6 +75,14 @@
       const q = e.target.value;
       if (q === last) return;
       last = q;
+
+      // If the query is empty, clear results and don't show "No results".
+      if (!q || !q.trim()) {
+        results.innerHTML = '';
+        srStatus.textContent = '';
+        return;
+      }
+
       const items = await window.themeSearch.query(q);
       results.innerHTML = items.slice(0, 50).map(i => `
         <li><a href="${i.url}">${i.title}</a><p>${i.summary}</p></li>

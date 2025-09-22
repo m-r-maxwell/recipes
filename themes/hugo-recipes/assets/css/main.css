@@ -16,19 +16,45 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #272932;
-    --text: #F5F3F5;
-    /* softer blue for dark mode that's still high contrast */
-    --link: #66aaff;
-    --border: #a18276;
-    --muted: #cfc7c3;
-    /* inputs tuned for darker backgrounds */
-    --input-bg: #32343a;
-    --input-border: #4a4d53;
-    --input-text: var(--text);
-    --input-placeholder: #b9a9a3;
-    /* RGB for focus shadow (link) */
-    --link-rgb: 102, 170, 255;
+   /* Dark mode: deepen the background and brighten foreground text to
+     preserve contrast when the page is viewed in grayscale or when
+     colors are desaturated by user settings. */
+   --bg: #0f1113; /* darker base so content pops in grayscale */
+   --text: #f8f8f9; /* near-white for strong contrast */
+   /* softer blue for dark mode that's still high contrast (kept for hue,
+     luminance will be high so grayscale remains visible) */
+   --link: #8fbfff;
+   /* Use a semi-transparent light border so it remains visible in
+     desaturated views (grayscale) while not being visually harsh). */
+   --border: #D2B48C;
+   /* Muted should still read as lighter than the background but darker
+     than primary text in grayscale. */
+   --muted: #bfb9b5;
+   /* inputs tuned for darker backgrounds: a touch lighter than the page
+     background so inputs are well-separated when greyscaled. */
+   --input-bg: #16171a;
+   --input-border: #D2B48C;
+   --input-text: var(--text);
+   --input-placeholder: #D2B48C;
+   /* RGB for focus shadow (link) */
+   --link-rgb: 143, 191, 255;
+  }
+
+  /* Make the mobile menu icon match the input placeholder/tan color in dark mode */
+  .menu-toggle {
+    color: var(--input-placeholder);
+  }
+}
+
+/* When the user requests higher contrast and is in dark mode, increase
+   border and placeholder luminance so the UI reads better when desaturated
+   (e.g., grayscale or accessibility contrast mode). */
+@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+  :root {
+    --border: #D2B48C;
+    --input-border: rgba(255,255,255,0.12);
+    --muted: #d6d0cc;
+    --link: #cfe6ff;
   }
 }
 
@@ -113,7 +139,14 @@ nav a {
 
 /* Use the border color for the hamburger (will be #a18276 in dark mode as defined by :root in dark media) */
 .menu-toggle {
+  /* Use current color for the icon; we'll set the color to match inputs in dark mode */
   color: var(--border);
+}
+
+/* Ensure SVG icons inherit currentColor so changing .menu-toggle color affects the icon */
+.menu-toggle svg * {
+  stroke: currentColor;
+  fill: currentColor;
 }
 
 .menu-toggle:focus,
@@ -142,6 +175,7 @@ nav a {
     margin-left: auto;
   }
 
+
   .site-header {
     align-items: center;
   }
@@ -169,10 +203,28 @@ nav a {
     padding: 0.5rem 1rem;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
-    /* subtle border using chosen color for distinction */
-    border: 1px solid #a18276;
+    /* subtle border using chosen color for distinction; use variable so
+       dark-mode adjustments apply correctly */
+    border: 1px solid var(--border);
     z-index: 99999;
   }
+
+/* Backdrop placed behind the menu when open to capture outside taps on touch devices */
+.menu-backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.001); /* almost transparent but captures taps reliably */
+  pointer-events: auto;
+  z-index: 99990;
+}
+
+/* Ensure the nav is above the backdrop on mobile */
+.main-nav.open {
+  z-index: 99991;
+}
 
   /* Vertical menu layout but do not stretch links full width */
   nav ul {
@@ -488,7 +540,7 @@ nav a:focus-visible {
     border-radius: 8px;
     border: 1px solid var(--border);
     background: var(--bg);
-    color: var(--input-placeholder);
+  color: var(--input-placeholder);
     font: inherit;
     font-size: 1rem;
     line-height: 1.5;

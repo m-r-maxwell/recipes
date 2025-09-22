@@ -1,6 +1,8 @@
 {{ define "main" }}
-  <!-- <h1>{{ .Title }}</h1>
-  <p>{{ .Content }}</p> -->
+  <h1>{{ .Title }}</h1>
+  {{- if .Content }}
+    <p>{{ .Content }}</p>
+  {{- end }}
   <div role="search" aria-label="Site search">
     <label>
       <input data-theme-search id="theme-search-input" type="search" placeholder="Search the site..." aria-label="Search" aria-controls="theme-search-results">
