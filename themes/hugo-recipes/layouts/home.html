@@ -8,13 +8,14 @@
   <section>
     <h2>Recent Recipes</h2>
   {{- $perPage := cond (isset .Site.Params "homePagerSize") (.Site.Params.homePagerSize) 10 -}}
-  {{- $recipesColl := where site.RegularPages "Section" "recipes" -}}
-  {{- $recipesSorted := $recipesColl.ByDate.Reverse -}}
-  {{- $paginator := .Paginate $recipesSorted $perPage -}}
+  {{- $coll := where site.RegularPages "Section" "recipes" -}}
+  {{- $sorted := $coll.ByDate.Reverse -}}
+  {{- $paginator := .Paginate $sorted $perPage -}}
     <ul>
       {{- range $paginator.Pages }}
         <li>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <small class="muted">&nbsp;— {{ .Section | title }}</small>
           <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
         </li>
       {{- end }}
@@ -37,26 +38,44 @@
         {{- end }}
       </nav>
     {{- end }}
-    {{- with site.GetPage "page" "recipes/all" }}
-      <p><a href="{{ .RelPermalink }}">View all recipes</a></p>
-    {{ end }}
+    {{/* Optional: keep a link to the full recipes listing if you want */}}
   </section>
+    <section>
+      <h2>Recent Snacks</h2>
+    {{- $snacksCount := cond (isset .Site.Params "homeSnacksCount") (.Site.Params.homeSnacksCount) 5 -}}
+    {{- $snacksColl := where site.RegularPages "Section" "snacks" -}}
+    {{- /* We'll output the latest N snacks as JSON for client-side pagination. */ -}}
+  {{- $snacks := first 100 ($snacksColl.ByDate.Reverse) -}} {{/* cap to reasonable number for homepage */}}
+    <div id="snacks-home" data-per-page="{{ $snacksCount }}">
+      <noscript>
+        <ul>
+          {{- range first $snacksCount $snacks }}
+            <li>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+            </li>
+          {{- end }}
+        </ul>
+        {{ with site.GetPage "page" "snacks/all" }}
+          <p><a href="{{ .RelPermalink }}">View all snacks</a></p>
+        {{ else }}
+          {{ with site.GetPage "section" "snacks" }}
+            <p><a href="{{ .RelPermalink }}">View all snacks</a></p>
+          {{ end }}
+        {{ end }}
+      </noscript>
 
-  <section>
-    <h2>Recent Snacks</h2>
-  {{- $snacksCount := cond (isset .Site.Params "homeSnacksCount") (.Site.Params.homeSnacksCount) 5 -}}
-  {{- $snacksColl := where site.RegularPages "Section" "snacks" -}}
-  {{- $snacks := first $snacksCount ($snacksColl.ByDate.Reverse) -}}
-    <ul>
-      {{- range $snacks }}
-        <li>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
-        </li>
-      {{- end }}
-    </ul>
-    {{ with site.GetPage "section" "snacks" }}
-      <p><a href="{{ .RelPermalink }}">View all snacks</a></p>
-    {{ end }}
-  </section>
+      <div id="snacks-list"></div>
+      <nav id="snacks-pagination" class="pagination" aria-label="Snacks pagination" hidden></nav>
+    </div>
+
+    {{- /* Output snacks as JSON using a slice + jsonify then mark safe for JS to avoid HTML-escaping */ -}}
+    {{- $items := slice -}}
+    {{- range $s := $snacks -}}
+      {{- $items = $items | append (dict "title" $s.Title "url" $s.RelPermalink "date" ($s.Date.Format "Jan 2, 2006")) -}}
+    {{- end -}}
+    <script id="snacks-data" type="application/json">{{ $items | jsonify | safeJS }}</script>
+
+  <script src="{{ "js/snacks-home-pagination.js" | relURL }}" defer></script>
+    </section>
 {{ end }}
