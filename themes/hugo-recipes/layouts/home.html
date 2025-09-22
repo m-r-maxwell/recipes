@@ -15,7 +15,6 @@
       {{- range $paginator.Pages }}
         <li>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          <small class="muted">&nbsp;— {{ .Section | title }}</small>
           <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
         </li>
       {{- end }}
