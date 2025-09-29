@@ -24,7 +24,7 @@ cook_time = "10-15 mins"
 - Salt and black pepper
 - 100g canned black beans, rinsed
 - 100g cooked rice
-- ß100g bell pepper, finely diced
+- 100g bell pepper, finely diced
 - 4 gluten-free tortillas (approx. 60g each)
 
 
