@@ -2,7 +2,9 @@
 title = 'Buffalo Chicken Potato Bowl'
 date = 2024-07-23T18:57:41-04:00
 draft = false
-tags = ["Chicken"]
+tags = ["Chicken", "Dinner"]
+prep_time = "15 mins"
+cook_time = "36–40 mins"
 +++
 
 ### Calories: 515 | 35g Protein | 50g Carbs | 25g Fat

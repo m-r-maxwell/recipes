@@ -2,7 +2,9 @@
 title = 'Cheesy Bbq Chicken and Cripsy Potatoes'
 date = 2024-07-23T19:54:28-04:00
 draft = false
-tags = ["Chicken", "BBQ"]
+tags = ["BBQ", "Chicken", "Dinner"]
+prep_time = "15 mins"
+cook_time = "25-30 mins"
 +++
 
 ### 484 Calories | 47g Protein | 39g Carbs | 15g Fat

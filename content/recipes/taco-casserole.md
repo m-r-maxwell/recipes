@@ -2,7 +2,9 @@
 title = 'Taco Casserole'
 date = 2024-08-11T19:53:35-04:00
 draft = false
-tags = ["Mexican"]
+tags = ["Beef", "Dinner", "Mexican"]
+prep_time = "15 mins"
+cook_time = "10–15 mins"
 +++
 
 ### 450 Calories | 35g Protein | 45g Carbs | 20g Fat

@@ -2,7 +2,9 @@
 title = 'Teriyaki Salmon Rice Bowls'
 date = 2024-07-29T20:13:32-04:00
 draft = false
-tags = ["Salmon", "Asian", "Rice Cooker"]
+tags = ["Asian", "Dinner", "Rice Cooker", "Salmon"]
+prep_time = "15 mins"
+cook_time = "30 mins"
 +++
 
 ### 447 Calories |

@@ -5,8 +5,6 @@ draft = false
 tags = ["Nachos"]
 +++
 
-
-
 ## Ingredients:
 - 2 cooked chicken breasts, shredded
 - 1/2 cup BBQ sauce (your favorite, smoky or sweet)

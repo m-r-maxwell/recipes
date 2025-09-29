@@ -2,7 +2,9 @@
 title = 'Japanese Teriyaki Salmon with Edamame Rice'
 date = 2025-05-23T20:17:39-04:00
 draft = false
-tags = ["Salmon", "Japanese"]
+tags = ["Dinner", "Japanese", "Salmon"]
+prep_time = "20 mins"
+cook_time = "10–12 mins"
 +++
 
 ## 510 Cals, 39g Protein, 35g Carbs, 24g Fat
@@ -25,4 +27,5 @@ tags = ["Salmon", "Japanese"]
 4. Stir edamame and sesame seeds into warm rice.
 
 ## Serve:
-1 salmon fillet per bowl200g edamame rice
+1 salmon fillet per bowl
+200g edamame rice

@@ -2,7 +2,9 @@
 title = 'Balsamic Glazed Steak'
 date = 2025-05-06T22:03:40-04:00
 draft = false
-tags = ["Steak"]
+tags = ["Beef", "Dinner", "Steak"]
+prep_time = "15 mins"
+cook_time = "17–22 mins"
 +++
 
 

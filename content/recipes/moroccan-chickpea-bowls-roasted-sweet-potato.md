@@ -2,7 +2,9 @@
 title = 'Moroccan Chickpea Bowls Roasted Sweet Potato'
 date = 2024-07-27T21:07:05-04:00
 draft = false
-tags = ["Moroccan"]
+tags = ["Dinner", "Moroccan"]
+prep_time = "15 mins"
+cook_time = "20–25 mins"
 +++
  
 ### 520 Calories | 20g Protein | 50g Carbs | 25g Fat

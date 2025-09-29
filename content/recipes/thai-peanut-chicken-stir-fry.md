@@ -2,7 +2,9 @@
 title = 'Thai Peanut Chicken Stir Fry'
 date = 2025-03-02T19:19:04-05:00
 draft = false
-tags = ["Thai", "Chicken"]
+tags = ["Chicken", "Dinner", "Thai"]
+prep_time = "15 mins"
+cook_time = "11–12 mins"
 +++
 
 ## 410 Cals

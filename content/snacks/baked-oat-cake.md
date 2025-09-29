@@ -10,9 +10,9 @@ tags = ["Dessert"]
 
 # Ingredients:
 - 40g oats
-- 1tbsp cocoa powder
-- 1tbsp cinnamon
-- 1tbsp vanilla extract 
+- 1 tbsp cocoa powder
+- 1 tbsp cinnamon
+- 1 tbsp vanilla extract 
 - Half a banana
 - 1/2 tsp baking powder
 - Salt

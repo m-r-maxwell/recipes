@@ -2,7 +2,9 @@
 title = 'Cheeseburger Potato Bowls'
 date = 2024-09-02T10:57:52-04:00
 draft = false
-tags = ["Beef"]
+tags = ["Beef", "Dinner"]
+prep_time = "15 mins"
+cook_time = "25–30 mins"
 +++
 
 ### 493 Calories | 50g Protein | 37g Carbs | 15g Fat

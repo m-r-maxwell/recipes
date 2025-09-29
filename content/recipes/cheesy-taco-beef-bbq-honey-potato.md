@@ -2,7 +2,9 @@
 title = 'Cheesy Taco Beef Bbq Honey Potato'
 date = 2024-07-24T18:23:09-04:00
 draft = false
-tags = ["Beef"]
+tags = ["Beef", "Dinner"]
+prep_time = "15 mins"
+cook_time = "15–20 mins"
 +++
 
 ### 508 Calories | 35g Protein | 50g Carbs | 20g Fat

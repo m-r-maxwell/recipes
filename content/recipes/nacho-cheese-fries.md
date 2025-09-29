@@ -2,7 +2,9 @@
 title = 'Nacho Cheese Fries'
 date = 2024-09-24T21:06:41-04:00
 draft = false
-tags = ["Beef", "Nachos"]
+tags = ["Beef", "Dinner", "Nachos"]
+prep_time = "15 mins"
+cook_time = "20–25 mins"
 +++
 
 ### 597 Calories | 61g Protein | 50g Carbs | 17g Fat

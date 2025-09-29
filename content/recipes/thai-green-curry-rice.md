@@ -2,7 +2,9 @@
 title = 'Thai Green Curry Rice'
 date = 2024-07-29T20:57:08-04:00
 draft = false
-tags = ["Thai", "Chicken", "Rice Cooker"]
+tags = ["Chicken", "Dinner", "Rice Cooker", "Thai"]
+prep_time = "15 mins"
+cook_time = "30 mins"
 +++
 
 ### 500 Calories | 30g Protein | 65g Carbs | 25g Fat

@@ -1,8 +1,12 @@
 +++
+
+
 title = 'Garlic Lime Beef Burritos with Black Beans & Rice'
 date = 2025-05-23T20:20:39-04:00
 draft = false
-tags = ["Beef"]
+tags = ["Beef", "Dinner"]
+prep_time = "15 mins"
+cook_time = "10-15 mins"
 +++
 
 
@@ -11,26 +15,26 @@ tags = ["Beef"]
 
 
 ## Ingredients:
-800g lean ground beef
-1 tsp olive oil
-1 tsp garlic
-1 tsp cumin
-1 tsp smoked paprika
-½ tsp chili flakes (optional)
-Salt and black pepper
-100g canned black beans, rinsed
-100g cooked rice
-100g bell pepper, finely diced
-4 gluten-free tortillas (approx. 60g each)
+- 800g lean ground beef
+- 1 tsp olive oil
+- 1 tsp garlic
+- 1 tsp cumin
+- 1 tsp smoked paprika
+- ½ tsp chili flakes (optional)
+- Salt and black pepper
+- 100g canned black beans, rinsed
+- 100g cooked rice
+- ß100g bell pepper, finely diced
+- 4 gluten-free tortillas (approx. 60g each)
 
 
 ## Garlic Lime Crema:
-100g plain Greek yogurt
-10g olive oil
-10g lime juice
-1 garlic clove
-Pinch of salt
-Optional: splash of gluten-free Worcestershire or coconut aminos for umami
+- 100g plain Greek yogurt
+- 10g olive oil
+- 10g lime juice
+- 1 garlic clove
+- Pinch of salt
+- Optional: splash of gluten-free Worcestershire or coconut aminos for umami
 
 
 ## Instructions:

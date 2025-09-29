@@ -3,6 +3,8 @@ title = 'Breakfast Scramble Sausage Sweet Potato Hash'
 date = 2024-07-23T18:51:49-04:00
 draft = false
 tags = ["Breakfast"]
+prep_time = "15 mins"
+cook_time = "20–25 mins"
 +++
 
 ### 420 Cals, 25g Protein, 18g Fat, 30g Carbs

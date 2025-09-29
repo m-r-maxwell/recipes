@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+  {{ $dateHuman := .Date | time.Format ":date_long" }}
+  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+
+  {{/* Recipe meta: show prep and cook times if available */}}
+  {{ $prep := or .Params.prep_time .Params.prepTime }}
+  {{ $cook := or .Params.cook_time .Params.cookTime }}
+  {{ if or $prep $cook }}
+    <div class="recipe-meta">
+      {{ if $prep }}<span class="prep-time">Prep: {{ $prep }}</span>{{ end }}
+      {{ if and $prep $cook }}<span class="meta-sep">&nbsp;•&nbsp;</span>{{ end }}
+      {{ if $cook }}<span class="cook-time">Cook: {{ $cook }}</span>{{ end }}
+    </div>
+  {{ end }}
+
+  {{ .Content }}
+
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}

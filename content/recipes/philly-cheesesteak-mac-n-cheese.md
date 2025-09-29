@@ -2,7 +2,9 @@
 title = 'Philly Cheesesteak Mac N Cheese'
 date = 2024-07-28T18:23:13-04:00
 draft = false
-tags = ["Beef"]
+tags = ["Beef", "Dinner"]
+prep_time = "15 mins"
+cook_time = "15 mins"
 +++
 
 ### 546 Calories | 62g Protein | 48g Carbs | 11g Fat

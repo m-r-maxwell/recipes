@@ -2,7 +2,9 @@
 title = 'Sweet Chili Popcorn Chicken'
 date = 2024-07-28T18:44:20-04:00
 draft = false
-tags = ["Chicken"]
+tags = ["Chicken", "Dinner"]
+prep_time = "15 mins"
+cook_time = "25–30 mins"
 +++
 
 ### 496 Calories | 35g Protein | 35g Carbs | 20g Fat

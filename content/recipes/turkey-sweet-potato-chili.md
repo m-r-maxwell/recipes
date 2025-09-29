@@ -2,7 +2,9 @@
 title = 'Turkey Sweet Potato Chili'
 date = 2025-09-21T14:26:08-05:00
 draft = false
-tags = ["Turkey"]
+tags = ["Dinner", "Turkey"]
+prep_time = "15 mins"
+cook_time = "25–30 mins"
 +++
 
 ## 480 Cals, 35g Protein, 45g Carbs, 20g Fat per meal

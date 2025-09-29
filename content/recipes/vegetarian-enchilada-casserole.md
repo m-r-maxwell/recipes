@@ -2,7 +2,9 @@
 title = 'Vegetarian Enchilada Casserole'
 date = 2024-07-29T21:39:38-04:00
 draft = false 
-tags = ["Mexican", "Vegetarian"]
+tags = ["Dinner", "Mexican", "Vegetarian"]
+prep_time = "15 mins"
+cook_time = "20–25 mins"
 +++
 
 ### 480 Calories | 25g Protein | 18g Fat |45g Carbs

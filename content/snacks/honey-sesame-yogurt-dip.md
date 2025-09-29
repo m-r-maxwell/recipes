@@ -5,9 +5,7 @@ draft = false
 tags = ["Snack","Dip","Vegetarian"]
 +++
 
-
 ## Ingredients:
-
 - 1 cup plain Greek yogurt
 - 1 tbsp honey
 - 1 tsp toasted sesame oil
@@ -24,6 +22,5 @@ tags = ["Snack","Dip","Vegetarian"]
 4. Garnish with sesame seeds and scallion. Serve with apple slices, pita chips, or cucumber.
 
 ### Notes:
-
 - To make a thinner dressing, stir in 1–2 tbsp water or more lemon juice.
 - Swap honey for maple syrup to make vegan (use dairy-free yogurt).

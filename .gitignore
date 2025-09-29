@@ -1,2 +1,4 @@
 public/
 *.txt
+/scripts/
+.DS_Store

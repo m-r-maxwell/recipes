@@ -1,30 +1,14 @@
-++
++++
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 date = {{ .Date }}
 draft = true
 description = ""
-tags = ["recipes"]
+tags = [""]
 servings = ""
 prep_time = ""
 cook_time = ""
 difficulty = ""
 +++
-
-## Ingredients
-
-- 
-
-## Instructions
-
-1. 
-
-## Notes
-
-- 
-
-## Nutrition
-
-- calories: 
 
 <!--
 Tips:

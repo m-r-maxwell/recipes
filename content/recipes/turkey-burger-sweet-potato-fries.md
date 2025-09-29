@@ -2,7 +2,9 @@
 title = 'Turkey Burger Sweet Potato Fries'
 date = 2024-07-29T21:35:12-04:00
 draft = false
-tags = ["Turkey"]
+tags = ["Dinner", "Turkey"]
+prep_time = "15 mins"
+cook_time = "20–25 mins"
 +++
 
 ### 480 Calories | 35g Protein | 20g Fat | 35g Carbs

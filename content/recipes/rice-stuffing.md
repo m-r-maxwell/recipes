@@ -2,7 +2,9 @@
 title = 'Rice Stuffing'
 date = 2024-11-23T18:58:30-05:00
 draft = false
-tags = ['Rice']
+tags = ["Side", "Rice"]
+prep_time = "15 mins"
+cook_time = "18–20 mins"
 +++
 
 ### Servings: 4

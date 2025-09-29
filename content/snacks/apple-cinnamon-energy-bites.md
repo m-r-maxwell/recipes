@@ -5,8 +5,6 @@ draft = false
 tags = ["Snack","Vegan","No-Bake"]
 +++
 
-
-
 ## Ingredients:
 
 - 1 cup rolled oats

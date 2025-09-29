@@ -2,7 +2,9 @@
 title =  "Thai Peanut Chicken with Rice"
 date = 2025-05-06T22:05:32-04:00
 draft = false
-tags = ["Thai"]
+tags = ["Chicken", "Dinner", "Thai"]
+prep_time = "15 mins"
+cook_time = "14–18 mins"
 +++
 
 ## 520 Cals, 52g Protein, 46g Carbs, 16g Fat
@@ -26,7 +28,7 @@ tags = ["Thai"]
 - 200g cooked rice noodles
 - 300g mixed bell peppers and carrots, julienned
 
-Instructions:
+## Instructions:
 1. Cook the chicken – Heat olive oil in a pan over medium-high heat. Add sliced chicken, season, and cook for 6–8 minutes until fully cooked.
 2. Make the peanut sauce – Blend all sauce ingredients, then simmer in a saucepan over low heat for 3–4 minutes, adding water to reach your desired consistency.
 3. Stir-fry the vegetables – In a nonstick pan or wok, stir-fry veggies with a dash of oil for 5–6 minutes until just tender.

@@ -2,7 +2,9 @@
 title = 'Buttery Garlic Steak and Eggs'
 date = 2024-07-23T19:11:08-04:00
 draft = false
-tags = ["Steak"]
+tags = ["Beef", "Dinner", "Steak"]
+prep_time = "15 mins"
+cook_time = "42 mins"
 +++
 
 ### 622 Calories | 64g Protein | 34g Carbs | 23g Fat

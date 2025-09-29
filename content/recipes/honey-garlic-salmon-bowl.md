@@ -1,8 +1,11 @@
 +++
+
 title = 'Honey Garlic Salmon Bowl'
 date = 2025-09-21T14:07:08-05:00
 draft = false
-tags = ["Salmon"]
+tags = ["Dinner", "Salmon"]
+prep_time = "15 mins"
+cook_time = "12–15 mins"
 +++
 
 

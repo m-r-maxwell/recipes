@@ -2,9 +2,10 @@
 title = 'Lemon Garlic Chicken and Roasted Veg'
 date = 2025-03-02T19:14:46-05:00
 draft = false
-tags = ["Chicken"]
+tags = ["Chicken", "Dinner"]
+prep_time = "15 mins"
+cook_time = "20–21 mins"
 +++
-
 ## 400 Cals
 ## 4 Servings
 ## 42g Protein, 10g Fat, 35g Carbs per meal

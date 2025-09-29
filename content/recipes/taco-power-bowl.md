@@ -2,7 +2,9 @@
 title = 'Taco Power Bowl'
 date = 2024-07-21T14:07:49-04:00
 draft = false
-tags = ["Mexican"]
+tags = ["Beef", "Dinner", "Mexican"]
+prep_time = "15 mins"
+cook_time = "20-30 mins"
 +++
 
 ### 522 Calories | 54g Protein | 42g Carbs | 14g Fat

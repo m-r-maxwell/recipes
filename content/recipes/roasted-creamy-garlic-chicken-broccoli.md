@@ -2,7 +2,9 @@
 title = 'Roasted Creamy Garlic Chicken Broccoli'
 date = 2024-07-28T18:39:15-04:00
 draft = false
-tags = ["Chicken"]
+tags = ["Chicken", "Dinner"]
+prep_time = "15 mins"
+cook_time = "30–32 mins"
 +++
 
 ### 464 Calories | 45g Protein | 20g Carbs | 25g Fat
