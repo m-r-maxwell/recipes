@@ -2,7 +2,9 @@
 title = 'Lemon Herb Chicken With Veggie Quinoa'
 date = 2024-07-27T20:58:11-04:00
 draft = false
-tags = ["Chicken"]
+tags = ["Chicken", "Dinner"]
+prep_time = "15 mins"
+cook_time = "20–25 mins"
 +++
 
 ### 450 Cals | 35g Protein | 40g Carbs | 15g Fat

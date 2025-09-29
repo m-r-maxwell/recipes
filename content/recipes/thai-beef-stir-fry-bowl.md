@@ -2,7 +2,9 @@
 title = 'Thai Beef Stir Fry Bowl'
 date = 2024-07-29T20:17:39-04:00
 draft = false
-tags = ["Beef", "Thai"]
+tags = ["Beef", "Dinner", "Thai"]
+prep_time = "15 mins"
+cook_time = "10 mins"
 +++
 
 ### 500 Calories | 35g Protein | 45g Carbs | 20g Fat
