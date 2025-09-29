@@ -2,13 +2,15 @@
 title = 'Garlic Steak Bites and Mashed Potatoes'
 date = 2024-08-03T10:58:25-04:00
 draft = false
-tags = ["Steak"]
+tags = ["Beef", "Dinner"]
+prep_time = "15 mins"
+cook_time = "30 mins"
 +++
 
 ### 560 Calories | 63g Protein | 41g Carbs | 15g Fat
 ### 4 Portions
 
-# Butter Garlic Steak Bites + Chimichurri:
+## Butter Garlic Steak Bites + Chimichurri:
 - 900g Beef Steaks cut into cubes (Using Topside/Top round beef cut)
 - 2 Tsp Salt
 - 2 Tsp Black Pepper
@@ -24,7 +26,7 @@ tags = ["Steak"]
 - 1/2 Lemon Juice
 - Flaky Salt to Garnish
 
-# Cheesy Mashed Potatoes: 
+## Cheesy Mashed Potatoes: 
 - 850g Raw White Potatoes (peeled and chopped into chunks)
 - 150ml Light Evaporated Milk
 - 80-100g Shredded Mozzarella Cheese
@@ -33,7 +35,7 @@ tags = ["Steak"]
 - 1 Tsp Black Pepper
 
 
-# Steps:
+## Steps:
 1. Slice steaks in to cubes
 2. Season with salt, pepper, parsley, oregano, garlic powder, paprika, and olive oil
 3. Mix until the color changes
@@ -45,5 +47,5 @@ tags = ["Steak"]
 9. Lower the heat after both sides and add in more butter along with fresh garlic, parsley, chili flakes, and lemon juice
 10. Mix until well coated
 
-# Serve:
+## Serve:
 Divide in to 4 meal prep containers.

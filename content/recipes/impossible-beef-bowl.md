@@ -1,8 +1,11 @@
 +++
+
 title = 'Impossible Beef Bowl'
 date = 2024-10-03T18:59:47-04:00
 draft = false
-tags = ["Vegetarian"]
+tags = ["Beef", "Dinner", "Vegetarian"]
+prep_time = "15 mins"
+cook_time = "15 mins"
 +++
 
 ### Calories: 344 | Protein: 9g | Carbohydrates: 16g | Fat: 13g

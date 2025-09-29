@@ -2,7 +2,9 @@
 title = 'Lemon Pepper Chicken Rice Bowls'
 date = 2024-08-03T11:01:13-04:00
 draft = false
-tags = ["Chicken", "Rice Bowl"]
+tags = ["Chicken", "Dinner", "Rice Bowl"]
+prep_time = "15 mins"
+cook_time = "15 mins"
 +++
 
 ### 531 Calories | 46g Protein | 46g Carbs | 17g Fat

@@ -2,7 +2,9 @@
 title =  "Sesame Soy Beef Bowls"
 date = 2025-05-06T22:05:32-04:00
 draft = false
-tags = ["Beef", "Vegetarian"]
+tags = ["Beef", "Dinner", "Vegetarian"]
+prep_time = "15 mins"
+cook_time = "15 mins"
 +++
 
 ## 375 Cals, 32g Protein, 48g Fat, 85g Carbs
