@@ -1,11 +1,10 @@
 +++
-=
 title = 'Spicy Black Bean and Veggie Bowl'
 date = 2024-07-21T15:09:28-04:00
 draft = false
 tags = ["Dinner", "Mexican"]
 prep_time = "15 mins"
-cook_time = "15ß mins"
+cook_time = "15 mins"
 +++
 
 ### 480 Cals, 20g Protein, 18g Fat, 50g Carbs
