@@ -389,6 +389,16 @@ nav a:focus,
   }
 }
 
+/* Small padding on very narrow viewports (mobile) to prevent content
+   from being flush against the left edge. Applies only below the
+   earlier desktop-centering breakpoint (560px). */
+@media (max-width: 559px) {
+  body {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
 /* Tags / terms styling */
 .terms {
   margin-top: 0.5rem;
@@ -551,11 +561,24 @@ nav a:focus-visible {
   }
 }
 
-/* DESKTOP: hide the chips and show the select so desktop matches mobile look */
-@media (min-width: 641px) {
+/* DESKTOP: hide the chips and show the select so desktop matches mobile look.
+   Also center the main content container on non-mobile viewports so pages
+   feel more centered on larger screens. */
+@media (min-width: 560px) {
   .archives-toc { display: none; }
   .archives-toc-select-label { display: block !important; }
   .archives-toc-select { display: block; }
+
+  /* Center the page content and give a slightly wider max width for
+     comfortable reading on tablets/desktops. Apply earlier so narrow
+     landscape phones and small tablets aren't left-aligned just before
+     the mobile breakpoint. */
+  body {
+    margin: 1.25rem auto;
+    max-width: 880px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 
 /* Focus styling for archives TOC elements to match search input */
