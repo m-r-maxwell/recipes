@@ -2,7 +2,9 @@
 title = 'Garlic Butter Salmon Roasted Asparagus'
 date = 2025-03-02T19:16:43-05:00
 draft = false
-tags = ["Salmon"]
+tags = ["Dinner", "Salmon"]
+prep_time = "15 mins"
+cook_time = "12 mins"
 +++
 
 

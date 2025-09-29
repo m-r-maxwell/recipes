@@ -4,7 +4,7 @@ date = 2024-07-25T07:21:40-04:00
 draft = false
 tags = ["Beef", "Dinner"]
 prep_time = "15 mins"
-cook_time = "10 mins"
+cook_time = "15 mins"
 +++
 
 ### 390 Cals | 35g Protein | 5g Fat | 35g Carbs

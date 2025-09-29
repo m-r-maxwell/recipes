@@ -2,16 +2,15 @@
 title = 'Chipotle Chicken'
 date = 2024-12-17T20:48:52-05:00
 draft = false
-tags = ["Chicken"]
+tags = ["Chicken", "Dinner"]
+prep_time = "15 mins"
+cook_time = "20-25 mins"
 +++
-
-
-
 ### 546 Calories | 46g Protein | 56g Carbs | 15g Fat
 
 ### 5 Servings
 
-# Ingredients:
+## Ingredients:
 
 Honey Chipotle Chicken Marinade
 - 1000g Raw Boneless Skinless Chicken Thighs
@@ -47,7 +46,7 @@ Chipotle Sauce
 - 1/2 Tsp Onion Powder
 - Squeeze of Lime Juice
 
-# Instructions:
+## Instructions:
 
 1. Season the chicken with salt, oregano, garlic powder, smoked paprika, cumin, 70g chipotle paste, 50g honey, lime juice and mix until the color changes
 2. On medium heat in a pan, add 20g of butter

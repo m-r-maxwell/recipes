@@ -2,7 +2,9 @@
 title = 'Korean Beef Bowls'
 date = 2025-03-02T19:20:22-05:00
 draft = false
-tags = ["Beef", "Korean"]
+tags = ["Beef", "Dinner", "Korean"]
+prep_time = "15 mins"
+cook_time = "30 mins"
 +++
 
 ## 420 Cals

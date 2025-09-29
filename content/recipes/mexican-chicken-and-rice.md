@@ -2,7 +2,9 @@
 title = 'Mexican Chicken and Rice'
 date = 2024-07-27T21:01:23-04:00
 draft = false
-tags = ["Mexican", "Chicken"]
+tags = ["Chicken", "Dinner", "Mexican"]
+prep_time = "15 mins"
+cook_time = "12–15 mins"
 +++
 
 

@@ -2,7 +2,9 @@
 title = 'KFC Popcorn Chicken Mac N Cheese'
 date = 2024-07-27T20:43:05-04:00
 draft = false
-tags = ["Chicken"]
+tags = ["Chicken", "Dinner"]
+prep_time = "15 mins"
+cook_time = "30–37 mins"
 +++
 
 ### 589 Calories | 45g Protein | 55g Carbs | 20g Fat

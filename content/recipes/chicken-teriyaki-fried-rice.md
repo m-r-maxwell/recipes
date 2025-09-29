@@ -2,7 +2,9 @@
 title = 'Chicken Teriyaki Fried Rice'
 date = 2024-07-24T18:34:58-04:00
 draft = false
-tags = ["Chicken", "Asian"]
+tags = ["Asian", "Chicken", "Dinner"]
+prep_time = "15 mins"
+cook_time = "13–16 mins"
 +++
 
 ### 527 Calories | 49g Protein | 45g Carbs | 16g Fat

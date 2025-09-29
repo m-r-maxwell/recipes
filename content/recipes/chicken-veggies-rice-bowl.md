@@ -2,7 +2,9 @@
 title = 'Chicken Veggies Rice Bowl'
 date = 2024-07-24T18:27:00-04:00
 draft = false
-tags = ["Chicken", "Rice Cooker"]
+tags = ["Chicken", "Dinner", "Rice Cooker"]
+prep_time = "15 mins"
+cook_time = "30 mins"
 +++
 
 This is all meant to be made in a single rice cooker.

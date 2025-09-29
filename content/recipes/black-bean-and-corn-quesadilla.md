@@ -4,7 +4,7 @@ date = 2024-07-23T18:48:10-04:00
 draft = false
 tags = ["Dinner", "Mexican", "Vegetarian"]
 prep_time = "10 mins"
-cook_time = "10 mins"
+cook_time = "10 - 20 mins"
 +++
 ### 420 Cals, 20g Protein, 15g Fat, 40g Carbs
 ### 4 Portions

@@ -2,7 +2,9 @@
 title = 'Honey Bbq Beef and Potatoes'
 date = 2024-07-24T19:11:37-04:00
 draft = false
-tags = ["BBQ", "Beef"]
+tags = ["BBQ", "Beef", "Chicken", "Dinner"]
+prep_time = "15 mins"
+cook_time = "15–20 mins"
 +++
 
 ### 550 Cals | 39g Protein | 12g Fat | 34g Carbs per meal

@@ -2,7 +2,9 @@
 title = 'Honey Garlic BBQ Chicken'
 date = 2025-09-21T14:04:08-05:00
 draft = false
-tags = ["Chicken"]
+tags = ["Chicken", "Dinner"]
+prep_time = "30 mins"
+cook_time = "21–24 mins"
 +++
 
 
