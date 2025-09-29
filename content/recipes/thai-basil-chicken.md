@@ -1,5 +1,4 @@
 +++
-
 title = 'Thai Basil Chicken with Jasmine Rice'
 date = 2025-05-23T20:17:39-04:00
 draft = false
