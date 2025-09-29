@@ -2,7 +2,9 @@
 title = 'Honey Bbq Chicken Mac N Cheese'
 date = 2024-07-24T19:27:29-04:00
 draft = false
-tags = ["BBQ", "Chicken"]
+tags = ["BBQ", "Chicken", "Dinner"]
+prep_time = "15 mins"
+cook_time = "6–8 mins (plus 8–10 mins if pasta uncooked)"
 +++
 
 ### 511 Calories | 50g Protein | 55g Carbs | 10g Fat
@@ -37,7 +39,7 @@ tags = ["BBQ", "Chicken"]
 6. Mix well
 
 # Mac N Cheese Steps
-* If the macaroni is not already cooked, do that first
+* If the macaroni is not already cooked, cook it according to package directions first (about 8–10 mins), then proceed.
 1. Add milk, hot sauce, cream cheese, and low fat cheddar to a pan 
 2. Mix until smooth and creamy
 3. Add the cooked macaroni to the sauce

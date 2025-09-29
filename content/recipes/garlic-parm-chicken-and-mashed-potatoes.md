@@ -2,7 +2,9 @@
 title = 'Garlic Parmesan Chicken and Mashed Potatoes'
 date = 2024-07-24T19:03:01-04:00
 draft = false
-tags = ["Chicken"]
+tags = ["Chicken", "Dinner"]
+prep_time = "15 mins"
+cook_time = "13–16 mins"
 +++
 
 ### 569 Calories | 40g Protein | 50g Carbs | 30g Fat
