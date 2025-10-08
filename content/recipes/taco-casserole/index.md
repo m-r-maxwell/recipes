@@ -7,6 +7,9 @@ prep_time = "15 mins"
 cook_time = "10–15 mins"
 +++
 
+<img src="taco-casserole.jpg" alt="Taco Casserole" style="width:400px;max-width:600px;object-fit:cover;border-radius:6px;margin-bottom:1rem;" />
+<!-- ![Taco Casserole](taco-casserole.jpg) -->
+
 ### 450 Calories | 35g Protein | 45g Carbs | 20g Fat
 ### 4 Portions
 

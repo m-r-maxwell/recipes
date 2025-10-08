@@ -1,5 +1,5 @@
 +++
-title = 'Honey Garlic BBQ Chicken'
+title = 'Honey Garlic BBQ Chicken Fried Rice'
 date = 2025-09-21T14:04:08-05:00
 draft = false
 tags = ["Chicken", "Dinner"]
@@ -7,6 +7,7 @@ prep_time = "30 mins"
 cook_time = "21–24 mins"
 +++
 
+<img src="chicken-fried-rice.jpg" alt="BBQ Chicken Fried Rice" style="width:400px;"/>
 
 ## Macros Per Serving (4 Total)
 With Eggs: 520 Calories | 37g Protein | 52g Carbs | 18g Fat

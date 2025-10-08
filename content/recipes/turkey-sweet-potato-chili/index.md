@@ -7,6 +7,11 @@ prep_time = "15 mins"
 cook_time = "25–30 mins"
 +++
 
+<div style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:stretch;margin-bottom:1rem;">
+	<img src="turkey-sp-chili.jpg" alt="Turkey Sweet Potato Chili" style="width:100%;max-width:400px;flex:1 1 400px;object-fit:cover;border-radius:6px;" />
+	<img src="turkey-sp-chili-bowl.jpg" alt="Turkey Sweet Potato Chili Bowl" style="width:100%;max-width:40    hugo new recipes/taco-casserole/index.md0px;flex:1 1 320px;object-fit:cover;border-radius:6px;" />
+</div>
+
 ## 480 Cals, 35g Protein, 45g Carbs, 20g Fat per meal
 ## Ingredients (4 Servings)
 - 800g ground turkey (93% lean or higher)
