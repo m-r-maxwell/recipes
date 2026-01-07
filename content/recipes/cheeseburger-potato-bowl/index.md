@@ -10,6 +10,10 @@ cook_time = "25–30 mins"
 ### 493 Calories | 50g Protein | 37g Carbs | 15g Fat
 ## 4 Portions
 
+<!-- <div style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:stretch;margin-bottom:1rem;">
+    <img src="cheeseburger.jpg" alt="Cheeseburger Potato Bowls" style="width:100%;max-width:400px;flex:1 1 400px;object-fit:cover;border-radius:6px;" />
+</div> -->
+
 # Ingredients:
 - 800g Raw Sweet Potatoes cut into small cubes
 - 1 Tsp Salt

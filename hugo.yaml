@@ -2,7 +2,6 @@
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "https://m-r-maxwell.github.io/recipes/"
 title: Meal Prep Recipes
-#copyright: "© [PaperMod Contributors](https://github.com/adityatelange/hugo-PaperMod/graphs/contributors)"
 pagination:
   pagerSize: 10
 theme: "hugo-recipes"
@@ -46,9 +45,7 @@ languages:
         - name: About
           url: /about/
           weight: 10
-        # - name: WiKi
-        #   url: https://github.com/adityatelange/hugo-PaperMod/wiki/
-
+        
 outputs:
   home:
     - HTML
