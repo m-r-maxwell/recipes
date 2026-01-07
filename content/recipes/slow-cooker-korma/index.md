@@ -1,7 +1,7 @@
 +++
 title = 'Slow Cooker Korma'
 date = 2026-01-07T17:53:57-05:00
-draft = true
+draft = false
 description = ""
 tags = ["Indian", "Chicken", "Dinner"]
 servings = "4"

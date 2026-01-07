@@ -1,7 +1,7 @@
 +++
 title = 'One Pot Cheese and Chicken Enchilada'
 date = 2026-01-07T18:07:20-05:00
-draft = true
+draft = false
 description = ""
 tags = ["Chicken", "Dinner", "One Pot", "Mexican"]
 servings = "4"
