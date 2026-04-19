@@ -1,0 +1,49 @@
+{{ define "main" }}
+  <h1>Meal Planner</h1>
+  <p>Select tags and a number of meals (1–4). The planner will pick recipes and show aggregate macros.</p>
+
+  <section id="planner-controls">
+    <div>
+      <label for="planner-tags-list">Tags:</label>
+      <div id="planner-tags-list" class="tags-list" role="list" aria-label="Available tags"></div>
+    </div>
+
+    <div>
+      <label for="planner-count">Meals:</label>
+      <select id="planner-count">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="planner-calories">Target calories (total, optional):</label>
+      <input id="planner-calories" type="number" min="0" placeholder="e.g. 2000" />
+    </div>
+
+    <div>
+      <label for="planner-strategy">Strategy:</label>
+      <select id="planner-strategy">
+        <option value="closest">Closest to calories</option>
+        <option value="high-protein">Highest protein</option>
+        <option value="balanced">Balanced macros</option>
+      </select>
+    </div>
+
+    <div>
+      <button id="planner-generate">Generate</button>
+    </div>
+  </section>
+
+  <section id="planner-results">
+    <h2>Selections</h2>
+    <ul id="planner-list"></ul>
+
+    <h2>Totals</h2>
+    <div id="planner-totals"></div>
+  </section>
+
+  <script src="{{ "js/meal-planner.js" | relURL }}" defer></script>
+{{ end }}

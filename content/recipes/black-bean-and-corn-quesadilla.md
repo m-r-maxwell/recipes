@@ -2,7 +2,7 @@
 title = 'Black Bean and Corn Quesadilla'
 date = 2024-07-23T18:48:10-04:00
 draft = false
-tags = ["Dinner", "Mexican", "Vegetarian"]
+tags = ["Dinner", "Mexican", "Vegetarian", "400-500 Calories"]
 prep_time = "10 mins"
 cook_time = "10 - 20 mins"
 +++

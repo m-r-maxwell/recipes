@@ -36,6 +36,9 @@ languages:
         - name: Archive
           url: /archives/
           weight: 5
+        - name: Meal Planner
+          url: /meal-planner/
+          weight: 6
         - name: Search
           url: /search/
           weight: 10

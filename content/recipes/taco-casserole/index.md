@@ -2,7 +2,7 @@
 title = 'Taco Casserole'
 date = 2024-08-11T19:53:35-04:00
 draft = false
-tags = ["Beef", "Dinner", "Mexican"]
+tags = ["Beef", "Dinner", "Mexican", "400-500 Calories"]
 prep_time = "15 mins"
 cook_time = "10–15 mins"
 +++

@@ -2,7 +2,7 @@
 title = 'Lemon Garlic Chicken and Roasted Veg'
 date = 2025-03-02T19:14:46-05:00
 draft = false
-tags = ["Chicken", "Dinner"]
+tags = ["Chicken", "Dinner", "400-500 Calories"]
 prep_time = "15 mins"
 cook_time = "20–21 mins"
 +++

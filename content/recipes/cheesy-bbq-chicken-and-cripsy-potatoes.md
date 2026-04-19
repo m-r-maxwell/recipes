@@ -2,7 +2,7 @@
 title = 'Cheesy Bbq Chicken and Cripsy Potatoes'
 date = 2024-07-23T19:54:28-04:00
 draft = false
-tags = ["BBQ", "Chicken", "Dinner"]
+tags = ["BBQ", "Chicken", "Dinner", "400-500 Calories"]
 prep_time = "15 mins"
 cook_time = "25-30 mins"
 +++

@@ -2,7 +2,7 @@
 title =  "Thai Peanut Chicken with Rice"
 date = 2025-05-06T22:05:32-04:00
 draft = false
-tags = ["Chicken", "Dinner", "Thai"]
+tags = ["Chicken", "Dinner", "Thai", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "14–18 mins"
 +++

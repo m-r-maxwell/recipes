@@ -2,7 +2,7 @@
 title = 'Creamy Garlic Cheesy Steak Potatoes'
 date = 2024-07-24T18:42:04-04:00
 draft = false
-tags = ["Beef", "Dinner", "Steak"]
+tags = ["Beef", "Dinner", "Steak", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "20-25 mins"
 +++

@@ -2,7 +2,7 @@
 title = 'Teriyaki Salmon Rice Bowls'
 date = 2024-07-29T20:13:32-04:00
 draft = false
-tags = ["Asian", "Dinner", "Rice Cooker", "Salmon"]
+tags = ["Asian", "Dinner", "Rice Cooker", "Salmon", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "30 mins"
 +++

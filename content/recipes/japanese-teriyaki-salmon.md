@@ -2,7 +2,7 @@
 title = 'Japanese Teriyaki Salmon with Edamame Rice'
 date = 2025-05-23T20:17:39-04:00
 draft = false
-tags = ["Dinner", "Japanese", "Salmon"]
+tags = ["Dinner", "Japanese", "Salmon", "500-600 Calories"]
 prep_time = "20 mins"
 cook_time = "10–12 mins"
 +++

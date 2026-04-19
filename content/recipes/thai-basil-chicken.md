@@ -2,7 +2,7 @@
 title = 'Thai Basil Chicken with Jasmine Rice'
 date = 2025-05-23T20:17:39-04:00
 draft = false
-tags = ["Chicken", "Dinner", "Thai"]
+tags = ["Chicken", "Dinner", "Thai" , "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "8–12 mins"
 +++

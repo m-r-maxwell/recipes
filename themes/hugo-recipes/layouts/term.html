@@ -3,15 +3,17 @@
     <h1 id="term-title">{{ .Title }}</h1>
     {{ .Content }}
 
-    {{ if .Pages }}
+    {{- $term := .Title -}}
+    {{- $pages := where .Site.RegularPages "Params.tags" "intersect" (slice $term) -}}
+    {{- if gt (len $pages) 0 }}
       <div class="terms" role="group" aria-labelledby="term-items-label">
         <div id="term-items-label" class="terms-label">Items:</div>
         <ul class="terms-list" role="list" aria-label="Term items">
-          {{- range .Pages }}
+          {{- range $pages }}
             <li class="term" role="listitem"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
           {{- end }}
         </ul>
       </div>
-    {{ end }}
+    {{- end }}
   </main>
 {{ end }}

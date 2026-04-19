@@ -2,7 +2,7 @@
 title = 'Lemon Herb Chicken With Veggie Quinoa'
 date = 2024-07-27T20:58:11-04:00
 draft = false
-tags = ["Chicken", "Dinner"]
+tags = ["Chicken", "Dinner", "400-500 Calories"]
 prep_time = "15 mins"
 cook_time = "20–25 mins"
 +++

@@ -2,7 +2,7 @@
 title = 'Cheesy Beef Loaded Fries'
 date = 2024-07-24T18:19:07-04:00
 draft = false
-tags = ["Beef", "Dinner"]
+tags = ["Beef", "Dinner", "400-500 Calories"]
 prep_time = "15 mins"
 cook_time = "17–18 mins"
 +++

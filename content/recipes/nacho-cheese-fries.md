@@ -2,7 +2,7 @@
 title = 'Nacho Cheese Fries'
 date = 2024-09-24T21:06:41-04:00
 draft = false
-tags = ["Beef", "Dinner", "Nachos"]
+tags = ["Beef", "Dinner", "Nachos", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "20–25 mins"
 +++

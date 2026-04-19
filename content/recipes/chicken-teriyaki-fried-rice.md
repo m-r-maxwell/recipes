@@ -2,7 +2,7 @@
 title = 'Chicken Teriyaki Fried Rice'
 date = 2024-07-24T18:34:58-04:00
 draft = false
-tags = ["Asian", "Chicken", "Dinner"]
+tags = ["Asian", "Chicken", "Dinner", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "13–16 mins"
 +++

@@ -2,7 +2,7 @@
 title = 'Cashew Chicken Stir Fry'
 date = 2025-07-25T19:11:08-05:00
 draft = false
-tags = ["Chicken", "Dinner"]
+tags = ["Chicken", "Dinner", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "10–15 mins"
 +++

@@ -2,7 +2,7 @@
 title = 'Lemon Pepper Chicken Rice Bowls'
 date = 2024-08-03T11:01:13-04:00
 draft = false
-tags = ["Chicken", "Dinner", "Rice Bowl"]
+tags = ["Chicken", "Dinner", "Rice Bowl", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "15 mins"
 +++

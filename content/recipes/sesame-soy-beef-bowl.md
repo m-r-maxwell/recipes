@@ -2,7 +2,7 @@
 title =  "Sesame Soy Beef Bowls"
 date = 2025-05-06T22:05:32-04:00
 draft = false
-tags = ["Beef", "Dinner", "Vegetarian"]
+tags = ["Beef", "Dinner", "Vegetarian", "300-400 Calories"]
 prep_time = "15 mins"
 cook_time = "15 mins"
 +++

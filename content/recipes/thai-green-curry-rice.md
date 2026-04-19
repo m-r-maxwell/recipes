@@ -2,7 +2,7 @@
 title = 'Thai Green Curry Rice'
 date = 2024-07-29T20:57:08-04:00
 draft = false
-tags = ["Chicken", "Dinner", "Rice Cooker", "Thai"]
+tags = ["Chicken", "Dinner", "Rice Cooker", "Thai", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "30 mins"
 +++

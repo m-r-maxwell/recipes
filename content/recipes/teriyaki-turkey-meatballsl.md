@@ -2,7 +2,7 @@
 title = 'Teriyaki Turkey Meatballs'
 date = 2025-09-21T14:07:08-05:00
 draft = false
-tags = ["Dinner", "Turkey"]
+tags = ["Dinner", "Turkey", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "18–20 mins"
 +++

@@ -2,7 +2,7 @@
 title = 'Chicken Veggies Rice Bowl'
 date = 2024-07-24T18:27:00-04:00
 draft = false
-tags = ["Chicken", "Dinner", "Rice Cooker"]
+tags = ["Chicken", "Dinner", "Rice Cooker", "300-400 Calories"]
 prep_time = "15 mins"
 cook_time = "30 mins"
 +++
@@ -10,7 +10,7 @@ cook_time = "30 mins"
 This is all meant to be made in a single rice cooker.
 
 ### 340 Calories | 40g Protein | 50g Carbs | 15g Fat
-### 2 Portion 
+### 2 Portions
 
 # Ingredients:
 - 1 cup rice

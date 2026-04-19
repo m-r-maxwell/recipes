@@ -2,7 +2,7 @@
 title = 'Cheeseburger Potato Bowls'
 date = 2024-09-02T10:57:52-04:00
 draft = false
-tags = ["Beef", "Dinner"]
+tags = ["Beef", "Dinner", "400-500 Calories"]
 prep_time = "15 mins"
 cook_time = "25–30 mins"
 +++

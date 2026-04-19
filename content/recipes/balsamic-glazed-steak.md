@@ -2,13 +2,13 @@
 title = 'Balsamic Glazed Steak'
 date = 2025-05-06T22:03:40-04:00
 draft = false
-tags = ["Beef", "Dinner", "Steak"]
+tags = ["Beef", "Dinner", "Steak", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "17–22 mins"
 +++
 
 
-## 40 Cals, 58g Protein, 42g Carbs, 16g Fat per meal
+## 540 Cals, 58g Protein, 42g Carbs, 16g Fat per meal
 
 ## 4 Servings
 

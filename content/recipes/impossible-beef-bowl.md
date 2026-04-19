@@ -3,7 +3,7 @@
 title = 'Impossible Beef Bowl'
 date = 2024-10-03T18:59:47-04:00
 draft = false
-tags = ["Beef", "Dinner", "Vegetarian"]
+tags = ["Beef", "Dinner", "Vegetarian", "300-400 Calories"]
 prep_time = "15 mins"
 cook_time = "15 mins"
 +++

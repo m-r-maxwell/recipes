@@ -2,7 +2,7 @@
 title = 'Honey Bbq Chicken Mac N Cheese'
 date = 2024-07-24T19:27:29-04:00
 draft = false
-tags = ["BBQ", "Chicken", "Dinner"]
+tags = ["BBQ", "Chicken", "Dinner", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "6–8 mins (plus 8–10 mins if pasta uncooked)"
 +++

@@ -2,7 +2,7 @@
 title = 'Honey Bbq Chicken and Potatoes'
 date = 2024-07-24T19:22:04-04:00
 draft = false
-tags = ["BBQ", "Chicken", "Dinner"]
+tags = ["BBQ", "Chicken", "Dinner", "300-400 Calories"]
 prep_time = "15 mins"
 cook_time = "15–20 mins"
 +++

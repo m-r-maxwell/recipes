@@ -2,7 +2,7 @@
 title = 'Spicy Black Bean and Veggie Bowl'
 date = 2024-07-21T15:09:28-04:00
 draft = false
-tags = ["Dinner", "Mexican"]
+tags = ["Dinner", "Mexican", "Vegetarian", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "15 mins"
 +++

@@ -2,7 +2,7 @@
 title = 'Moroccan Chickpea Bowls Roasted Sweet Potato'
 date = 2024-07-27T21:07:05-04:00
 draft = false
-tags = ["Dinner", "Moroccan"]
+tags = ["Dinner", "Moroccan", "Vegetarian", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "20–25 mins"
 +++

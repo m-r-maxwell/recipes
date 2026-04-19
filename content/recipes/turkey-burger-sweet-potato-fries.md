@@ -2,7 +2,7 @@
 title = 'Turkey Burger Sweet Potato Fries'
 date = 2024-07-29T21:35:12-04:00
 draft = false
-tags = ["Dinner", "Turkey"]
+tags = ["Dinner", "Turkey", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "20–25 mins"
 +++

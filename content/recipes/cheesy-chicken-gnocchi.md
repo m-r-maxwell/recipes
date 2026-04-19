@@ -2,7 +2,7 @@
 title = 'Cheesy Chicken Bacon and Pesto Gnocchi'
 date = 2025-05-23T20:19:39-04:00
 draft = false
-tags = ["Chicken", "Dinner", "Pasta"]
+tags = ["Chicken", "Dinner", "Pasta", "400-500 Calories"]
 prep_time = "15 mins"
 cook_time = "15 - 20 mins"
 +++

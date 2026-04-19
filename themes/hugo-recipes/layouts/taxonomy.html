@@ -7,10 +7,16 @@
       <div class="terms tag-index" role="region" aria-labelledby="taxonomy-terms-label">
         <div id="taxonomy-terms-label" class="terms-label">Tags</div>
         <ul class="terms-list" role="list" aria-label="All tags">
-          {{- range . }}
-            {{- with .Page }}
-              <li class="term" role="listitem"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+          {{- range $term := . }}
+            {{- $termTitle := $term.Term -}}
+            {{- $count := $term.Count -}}
+            {{- $permalink := "" -}}
+            {{- with $term.Page }}
+              {{- $permalink = .RelPermalink -}}
+            {{- else }}
+              {{- $permalink = (print "tags/" ($termTitle | urlize) "/") | relURL -}}
             {{- end }}
+            <li class="term" role="listitem"><a href="{{ $permalink }}">{{ $termTitle }}</a> <span class="term-count">({{ $count }})</span></li>
           {{- end }}
         </ul>
       </div>

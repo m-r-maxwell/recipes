@@ -2,7 +2,7 @@
 title = 'Cheesy Taco Beef Bbq Honey Potato'
 date = 2024-07-24T18:23:09-04:00
 draft = false
-tags = ["Beef", "Dinner"]
+tags = ["Beef", "Dinner", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "15–20 mins"
 +++

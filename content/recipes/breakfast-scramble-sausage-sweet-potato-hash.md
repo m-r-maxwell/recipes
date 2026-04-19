@@ -2,7 +2,7 @@
 title = 'Breakfast Scramble Sausage Sweet Potato Hash'
 date = 2024-07-23T18:51:49-04:00
 draft = false
-tags = ["Breakfast"]
+tags = ["Breakfast", "400-500 Calories"]
 prep_time = "15 mins"
 cook_time = "20–25 mins"
 +++

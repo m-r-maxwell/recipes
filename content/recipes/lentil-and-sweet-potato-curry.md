@@ -2,7 +2,7 @@
 title = 'Lentil & Sweet Potato Curry'
 date = 2025-07-25T19:11:08-05:00
 draft = false
-tags = ["Dinner", "Lentils", "Vegetarian"]
+tags = ["Dinner", "Lentils", "Vegetarian", "400-500 Calories"]
 prep_time = "15 mins"
 cook_time = "24–30 mins"
 +++

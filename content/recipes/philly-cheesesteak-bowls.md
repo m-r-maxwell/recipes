@@ -2,7 +2,7 @@
 title = 'Philly Cheesesteak Bowls'
 date = 2024-07-25T07:21:40-04:00
 draft = false
-tags = ["Beef", "Dinner"]
+tags = ["Beef", "Dinner", "300-400 Calories"]
 prep_time = "15 mins"
 cook_time = "15 mins"
 +++

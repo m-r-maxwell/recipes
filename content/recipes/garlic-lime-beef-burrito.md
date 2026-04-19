@@ -4,7 +4,7 @@
 title = 'Garlic Lime Beef Burritos with Black Beans & Rice'
 date = 2025-05-23T20:20:39-04:00
 draft = false
-tags = ["Beef", "Dinner"]
+tags = ["Beef", "Dinner", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "10-15 mins"
 +++

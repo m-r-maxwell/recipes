@@ -77,4 +77,24 @@
 
   <script src="{{ "js/snacks-home-pagination.js" | relURL }}" defer></script>
     </section>
+    <section>
+      <h2>Tags</h2>
+      {{- $tags := .Site.Taxonomies.tags -}}
+      {{- if gt (len $tags) 0 }}
+        <ul class="home-tags-list" role="list" aria-label="Popular tags">
+          {{- range $name, $pages := $tags }}
+            {{- $termPage := site.GetPage (printf "taxonomy/%s/%s" "tags" (urlize $name)) -}}
+            <li class="tag">
+              {{- if $termPage }}
+                <a href="{{ $termPage.RelPermalink }}">{{ $name }} <span class="tag-count">({{ len $pages }})</span></a>
+              {{- else }}
+                <a href="{{ (print "tags/" (urlize $name) "/") | relURL }}">{{ $name }} <span class="tag-count">({{ len $pages }})</span></a>
+              {{- end }}
+            </li>
+          {{- end }}
+        </ul>
+      {{- else }}
+        <p>No tags yet</p>
+      {{- end }}
+    </section>
 {{ end }}

@@ -2,7 +2,7 @@
 title = 'Pepper Lunch Rice Bowl'
 date = 2024-07-28T18:19:22-04:00
 draft = false
-tags = ["Beef", "Dinner", "Rice Cooker"]
+tags = ["Beef", "Dinner", "Rice Cooker", "500-600 Calories"]
 prep_time = "30 mins"
 cook_time = "35–38 mins"
 +++

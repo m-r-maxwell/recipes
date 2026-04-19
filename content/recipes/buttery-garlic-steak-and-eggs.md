@@ -2,7 +2,7 @@
 title = 'Buttery Garlic Steak and Eggs'
 date = 2024-07-23T19:11:08-04:00
 draft = false
-tags = ["Beef", "Dinner", "Steak"]
+tags = ["Beef", "Dinner", "Steak", "600+ Calories"]
 prep_time = "15 mins"
 cook_time = "42 mins"
 +++

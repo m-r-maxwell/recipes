@@ -2,7 +2,7 @@
 title = 'Sweet Chili Popcorn Chicken'
 date = 2024-07-28T18:44:20-04:00
 draft = false
-tags = ["Chicken", "Dinner"]
+tags = ["Chicken", "Dinner", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "25–30 mins"
 +++

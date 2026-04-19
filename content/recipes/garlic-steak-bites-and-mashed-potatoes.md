@@ -2,7 +2,7 @@
 title = 'Garlic Steak Bites and Mashed Potatoes'
 date = 2024-08-03T10:58:25-04:00
 draft = false
-tags = ["Beef", "Dinner"]
+tags = ["Beef", "Dinner", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "30 mins"
 +++

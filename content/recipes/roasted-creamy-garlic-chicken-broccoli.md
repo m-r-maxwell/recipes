@@ -2,7 +2,7 @@
 title = 'Roasted Creamy Garlic Chicken Broccoli'
 date = 2024-07-28T18:39:15-04:00
 draft = false
-tags = ["Chicken", "Dinner"]
+tags = ["Chicken", "Dinner", "400-500 Calories"]
 prep_time = "15 mins"
 cook_time = "30–32 mins"
 +++

@@ -2,7 +2,7 @@
 title = 'Chipotle Chicken'
 date = 2024-12-17T20:48:52-05:00
 draft = false
-tags = ["Chicken", "Dinner"]
+tags = ["Chicken", "Dinner", "500-600 Calories"]
 prep_time = "15 mins"
 cook_time = "20-25 mins"
 +++
