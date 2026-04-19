@@ -5,8 +5,7 @@ draft = false
 +++
 
 
-Hi there, my name is Matt and I am a software engineer, but I love cooking. It helps to provide a creative outlet.
-
-Starting off, I did not know how to cook until about 4 years ago and have been getting more in to it. before that I did dabble in baking. I started off using one of those recipe meal kits until I finally felt comfortable branching out and making my own recipes.
-
-This website was built with Hugo and my own custom hugo theme since I did not find anything out there that fit what I wanted.
+Hi, I’m Matt. I’m a software engineer who enjoys cooking as a creative outlet.<br>
+I didn’t start cooking seriously until about four years ago. Before that, I mostly dabbled in baking. Like a lot of people, I started with meal kits, and over time got comfortable enough to branch out, experiment, and build my own recipes. <br>
+This site is a collection of recipes I’ve found, adapted, or created—focused on meals that are practical, repeatable, and worth making again.<br>
+The site itself is built with Hugo using a custom theme, since I couldn’t find anything that matched exactly what I wanted.
