@@ -7,5 +7,5 @@ draft: false
 ---
 
 Hi there and welcome 👋! <br>
-Straightforward recipes built for consistent meal prep—collected, created, tested, and refined over time.
+Straightforward recipes built for consistent meal prep, collected, created, tested, and refined over time.
 Most recipes are designed with meal prep and consistency in mind.
