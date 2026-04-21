@@ -467,6 +467,16 @@ nav a:focus,
   color: inherit;
 }
 
+/* Prevent headings/paragraphs marked as `.nutrition` from forcing
+   ingredient or step lists to inherit the green color. Lists should
+   keep normal body text color. */
+.nutrition ul,
+.nutrition ol,
+.nutrition li {
+  color: var(--text);
+  font-weight: inherit;
+}
+
 /* Meal planner layout tweaks */
 #planner-controls {
   display: grid;

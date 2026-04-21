@@ -41,4 +41,4 @@ difficulty = "1"
 2. Add chicken and potatoes (or cauliflower). Stir to coat.
 3. Cook on LOW 6–7 hours or HIGH 3–4 hours.
 4. Stir in peas and lemon juice during the last 10 minutes.
-5. ![alt text](A3E26373-C830-4244-BFD9-8A36028C21A6_1_105_c.jpeg)Portion into 4 containers and top with cilantro.
+5. Portion into 4 containers and top with cilantro.
