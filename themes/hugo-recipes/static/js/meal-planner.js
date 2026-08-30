@@ -4,16 +4,18 @@
 // - Picks random recipes matching selected tags and shows aggregated macros
 
 async function loadData() {
-  const candidates = ['/recipes/index.json', '/index.json'];
-  for (const p of candidates) {
-    try {
-      const resp = await fetch(p);
-      if (resp.ok) return resp.json();
-    } catch (e) {
-      // continue trying
-    }
+  let base = '/';
+  const script = Array.from(document.scripts).find(el =>
+    el.src && /\/js\/meal-planner(?:\.|$)/.test(el.src)
+  );
+  if (script) {
+    base = new URL(script.src, window.location.origin)
+      .pathname.replace(/\/js\/meal-planner.*$/, '/');
   }
-  throw new Error('Failed to load data from /recipes/index.json or /index.json');
+
+  const resp = await fetch(base + 'index.json');
+  if (!resp.ok) throw new Error(`Failed to load meal data: ${resp.status}`);
+  return resp.json();
 }
 
 function parseMacros(text) {
@@ -89,7 +91,7 @@ function scoreComboByStrategy(sum, strategy, totalTarget, count) {
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     const data = await loadData();
-    const items = data.map(i => ({
+    const items = data.filter(i => i.section === 'recipes').map(i => ({
       title: i.title,
       url: i.url,
       summary: i.summary,
@@ -140,8 +142,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
 
       if (pool.length === 0) {
-        const main = document.getElementById('planner-list');
-        main.innerHTML = '<li>No recipes match the selected tags/filters.</li>';
+        const list = document.getElementById('planner-list');
+        list.replaceChildren();
+        const item = document.createElement('li');
+        item.textContent = 'No recipes match the selected tags/filters.';
+        list.appendChild(item);
         return;
       }
 
@@ -175,16 +180,20 @@ document.addEventListener('DOMContentLoaded', async () => {
       const chosen = best ? best.combo : [];
 
       const list = document.getElementById('planner-list');
-      list.innerHTML = '';
+      list.replaceChildren();
       chosen.forEach(c => {
         const li = document.createElement('li');
-        li.innerHTML = `<a href="${c.url}">${c.title}</a> - ${c.tags.join(', ')} <br> ${c.calories || '-'} cal | ${c.protein || '-'}g P | ${c.carbs || '-'}g C | ${c.fat || '-'}g F`;
+        const link = document.createElement('a');
+        link.href = c.url;
+        link.textContent = c.title;
+        li.append(link, document.createTextNode(` - ${c.tags.join(', ')}`), document.createElement('br'));
+        li.append(document.createTextNode(`${c.calories || '-'} cal | ${c.protein || '-'}g P | ${c.carbs || '-'}g C | ${c.fat || '-'}g F`));
         list.appendChild(li);
       });
 
       const totals = best ? best.sum : { calories: 0, protein: 0, carbs: 0, fat: 0 };
       const totalsDiv = document.getElementById('planner-totals');
-      totalsDiv.innerHTML = `Calories: ${totals.calories} | Protein: ${totals.protein}g | Carbs: ${totals.carbs}g | Fat: ${totals.fat}g`;
+      totalsDiv.textContent = `Calories: ${totals.calories} | Protein: ${totals.protein}g | Carbs: ${totals.carbs}g | Fat: ${totals.fat}g`;
         // planner chosen recipes (shopping list removed)
     });
 

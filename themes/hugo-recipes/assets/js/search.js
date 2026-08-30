@@ -84,9 +84,24 @@
       }
 
       const items = await window.themeSearch.query(q);
-      results.innerHTML = items.slice(0, 50).map(i => `
-        <li><a href="${i.url}">${i.title}</a><p>${i.summary}</p></li>
-      `).join('\n') || '<li>No results</li>';
+      results.replaceChildren();
+      const matches = items.slice(0, 50);
+      if (matches.length === 0) {
+        const item = document.createElement('li');
+        item.textContent = 'No results';
+        results.appendChild(item);
+      } else {
+        matches.forEach(i => {
+          const item = document.createElement('li');
+          const link = document.createElement('a');
+          link.href = i.url;
+          link.textContent = i.title;
+          const summary = document.createElement('p');
+          summary.textContent = i.summary;
+          item.append(link, summary);
+          results.appendChild(item);
+        });
+      }
       // Announce results count for screen readers
       const count = items.length;
       srStatus.textContent = count ? `${count} result${count === 1 ? '' : 's'} found` : 'No results';
